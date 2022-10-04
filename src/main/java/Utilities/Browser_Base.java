@@ -21,6 +21,7 @@ import java.util.Properties;
 public class Browser_Base {
     public static ChromeDriver driver;
 
+
     @Parameters({"browser", "url"})
     @BeforeTest
     public static void Intialize(String browser, String url) throws Exception {

@@ -1,6 +1,9 @@
 package TestRunner;
 
 
+import Pages_Models.ABTesting_Page.ABTestingPageMethods;
+import Pages_Models.AddRemoveElementPage.AddRemoveElementPageMethods;
+import Pages_Models.BasicLoginPage.BasicLoginPageMethods;
 import Pages_Models.Home_Page.HomePageMethods;
 import Pages_Models.PSS_Home_Page.AdminHomePageMethods;
 import Pages_Models.PSS_Login_Page.AdminLoginPageMethods;
@@ -10,10 +13,12 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.awt.*;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -30,18 +35,7 @@ public class TestRunner extends Utils {
     public TestRunner() throws IOException, BiffException {
     }
 
-    @Parameters({"url", "browser"})
-    @BeforeTest
-    public void validateCurrentURL (String url, String browser){
-        if (driver.getCurrentUrl().equals(url)){
-            System.out.println("Correct URL hit on "+ browser);
-        }
-        else  {
-            System.out.println("Incorrect URL hit on " + browser);
-            driver.close();
 
-        }
-    }
 
     @Parameters({"title"})
     @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "PSS Log in test case")
@@ -97,6 +91,40 @@ public class TestRunner extends Utils {
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
         newhomepage.getBannerText();
 
+
+
+
+    }
+    @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
+    public void GoToABTestingPage () {
+        ABTestingPageMethods newabtestingpage = PageFactory.initElements(driver, ABTestingPageMethods.class);
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        newhomepage.clickABTestingPageLink();
+        newabtestingpage.getTextOfABTestingDes();
+        newabtestingpage.goBackFromABTestingPage();
+
+
+    }
+
+    @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
+    public void GoToAddRemoveElementPage () {
+        AddRemoveElementPageMethods newaddremoveelementpage = PageFactory.initElements(driver, AddRemoveElementPageMethods.class);
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        newhomepage.addRemoveElementPageLink();
+        newaddremoveelementpage.addRemoveElementPageLink();
+        newaddremoveelementpage.goBackFromAddRemoveElementPage();
+
+
+    }
+
+    @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
+    public void GoToBasicLoginPage () throws AWTException {
+        BasicLoginPageMethods newbasicloginpage = PageFactory.initElements(driver, BasicLoginPageMethods.class);
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        newhomepage.basicLogingPageLink();
+        newbasicloginpage.enterUserCredentials();
+        //newbasicloginpage.readErrorMessage();
+        //navigateBack();
 
     }
 

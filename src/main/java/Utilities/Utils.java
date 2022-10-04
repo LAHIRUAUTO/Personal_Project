@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.io.*;
@@ -24,6 +25,16 @@ public class Utils extends Browser_Base{
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
     //Implicit Wait end
+
+    //Assert Title of the web page
+    @Parameters({"url", "browser"})
+    @BeforeTest
+    public void validateTitle (String url, String browser){
+        String currentTitle = driver.getTitle();
+        String expectedTitle = "The Internet";
+        Assert.assertEquals(currentTitle, expectedTitle, "Incorrect Title Displayed on " + browser);
+    }
+    //End Assert title of the web page
 
     //Explicit Wait ElementVisible
     public void explicitWaitElementVisible(WebElement element) {
@@ -165,9 +176,8 @@ public class Utils extends Browser_Base{
     }
     //1Slite0614
 
-    @DataProvider
-    public Object[][] getData () {
-        return new Object [][] {{},{}};
+    public static void navigateBack () {
+        driver.navigate().back();
     }
 
 

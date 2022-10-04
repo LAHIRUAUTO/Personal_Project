@@ -6,10 +6,7 @@ import com.aventstack.extentreports.Status;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import org.testng.TestListenerAdapter;
+import org.testng.*;
 import org.testng.annotations.Parameters;
 
 import java.io.File;
@@ -41,6 +38,7 @@ public class Listener extends Utils implements ITestListener {
             throw new RuntimeException(e);
         }
         test.addScreenCaptureFromPath(filePath, result.getMethod().getMethodName() );
+
 
     }
 

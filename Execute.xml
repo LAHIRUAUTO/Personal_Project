@@ -9,7 +9,7 @@
     <!--Globle Parameters for All Browsers -->
     <parameter name="Branch" value="${branch}"/><!--PSS_Release_21.2 Patch-47-->
     <parameter name="Module" value="Selenium Demo Test Result on "/>
-    <parameter name="url" value="http://the-internet.herokuapp.com/"/>
+    <parameter name="url" value="http://the-internet.herokuapp.com"/>
     <parameter name="title" value="The Internet"/>
     <parameter name="testerName" value="Lahiru Vikasitha"/>
     <parameter name="TestReportSenderMailAddress" value="dcs.selenium.report@gmail.com"/>
@@ -22,9 +22,15 @@
     <test verbose="2" preserve-order="true" name="Sub_Suite_1">
 
         <classes>
+
             <class name="TestRunner.TestRunner">
                 <methods>
                     <include name="ReadTheBannerOnHomePage"/>
+                    <exclude name="GoToABTestingPage"/>
+                    <exclude name="GoToAddRemoveElementPage"/>
+                    <exclude name="GoToBasicLoginPage"/>
+
+
                 </methods>
             </class>
         </classes>
