@@ -1,20 +1,21 @@
 package TestRunner;
 
 
-import Pages_Models.ABTesting_Page.ABTestingPageMethods;
-import Pages_Models.AddRemoveElementPage.AddRemoveElementPageMethods;
-import Pages_Models.BasicLoginPage.BasicLoginPageMethods;
-import Pages_Models.Home_Page.HomePageMethods;
-import Pages_Models.PSS_Home_Page.AdminHomePageMethods;
-import Pages_Models.PSS_Login_Page.AdminLoginPageMethods;
+import Old_Pages_Models.ABTesting_Page.ABTestingPageMethods;
+import Old_Pages_Models.AddRemoveElement_Page.AddRemoveElementPageMethods;
+import Old_Pages_Models.BasicLogin_Page.BasicLoginPageMethods;
+import Old_Pages_Models.Checkboxes_Page.CheckboxesPageMethods;
+import Old_Pages_Models.ContextMenu_Page.ContextMenuPageMethods;
+import Old_Pages_Models.DragAndDrop_Page.DragAndDropPageMethods;
+import Old_Pages_Models.Home_Page.HomePageMethods;
+import Old_Pages_Models.PSS_Home_Page.AdminHomePageMethods;
+import Old_Pages_Models.PSS_Login_Page.AdminLoginPageMethods;
 import Utilities.Utils;
 import com.sun.net.httpserver.Authenticator;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -75,21 +76,15 @@ public class TestRunner extends Utils {
 
     }
 
-    @Test (dependsOnMethods = {"LogInToThePSSAdmin"}, priority = 2, retryAnalyzer = Authenticator.Retry.class, description = "PSS Log out test case")
-    public void LogOutFromThePSSAdmin (){
-
-        AdminHomePageMethods newadminhomepage = PageFactory.initElements(driver, AdminHomePageMethods.class);
-        newadminhomepage.gotologgedInUserinfor();
-        newadminhomepage.clickLogoutButton();
-
-
-    }
-
 
     @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
     public void ReadTheBannerOnHomePage (){
+
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
         newhomepage.getBannerText();
+
+
 
 
 
@@ -97,34 +92,66 @@ public class TestRunner extends Utils {
     }
     @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
     public void GoToABTestingPage () {
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
         ABTestingPageMethods newabtestingpage = PageFactory.initElements(driver, ABTestingPageMethods.class);
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
         newhomepage.clickABTestingPageLink();
         newabtestingpage.getTextOfABTestingDes();
-        newabtestingpage.goBackFromABTestingPage();
+        navigateBack();
 
 
     }
 
     @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
     public void GoToAddRemoveElementPage () {
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
         AddRemoveElementPageMethods newaddremoveelementpage = PageFactory.initElements(driver, AddRemoveElementPageMethods.class);
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
-        newhomepage.addRemoveElementPageLink();
+        newhomepage.clickaddRemoveElementPageLink();
         newaddremoveelementpage.addRemoveElementPageLink();
-        newaddremoveelementpage.goBackFromAddRemoveElementPage();
-
+        navigateBack();
 
     }
 
     @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
     public void GoToBasicLoginPage () throws AWTException {
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
         BasicLoginPageMethods newbasicloginpage = PageFactory.initElements(driver, BasicLoginPageMethods.class);
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
-        newhomepage.basicLogingPageLink();
+        newhomepage.clickbasicLogingPageLink();
         newbasicloginpage.enterUserCredentials();
-        //newbasicloginpage.readErrorMessage();
-        //navigateBack();
+        newbasicloginpage.readErrorMessage();
+        navigateBack();
+
+    }
+
+    @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
+    public void GoToCheckboxesPage () {
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+        CheckboxesPageMethods newcheckboxespage = PageFactory.initElements(driver, CheckboxesPageMethods.class);
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        newhomepage.clickCheckboxesPageLink();
+        newcheckboxespage.selectCheckBox1();
+        newcheckboxespage.deselectCheckBox2();
+        navigateBack();
+    }
+
+    @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
+    public void GoToContextMenuPage ()  {
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+        ContextMenuPageMethods newcontextmenupage = PageFactory.initElements (driver, ContextMenuPageMethods.class);
+        HomePageMethods newhomepage = PageFactory.initElements (driver, HomePageMethods.class);
+        newhomepage.clickCotextMenuPageLink();
+        newcontextmenupage.clickContextMenu();
+    }
+
+    @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
+    public void GoToDragAndDropPage () {
+        //System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+        DragAndDropPageMethods newdraganddroppage = PageFactory.initElements (driver, DragAndDropPageMethods.class);
+        //HomePageMethods newhomepage = PageFactory.initElements (driver, HomePageMethods.class);
+        //newhomepage.clickDragAndDropPageLink();
+        newdraganddroppage.dragAndDrop();
 
     }
 

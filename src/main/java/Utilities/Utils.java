@@ -22,16 +22,30 @@ public class Utils extends Browser_Base{
     //Implicit Wait start
     @BeforeMethod
     public static void implicitwait () {
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
     //Implicit Wait end
+
+    //Implicit Wait start
+    @BeforeMethod
+    public static void threadSleep () throws InterruptedException {
+        Thread.sleep(2);
+
+    }
+    //Implicit Wait end
+
+    @BeforeMethod
+    public static void testCasename () {
+
+    }
 
     //Assert Title of the web page
     @Parameters({"url", "browser"})
     @BeforeTest
     public void validateTitle (String url, String browser){
         String currentTitle = driver.getTitle();
-        String expectedTitle = "The Internet";
+        String expectedTitle = "ToolsQA";
         Assert.assertEquals(currentTitle, expectedTitle, "Incorrect Title Displayed on " + browser);
     }
     //End Assert title of the web page
@@ -75,6 +89,13 @@ public class Utils extends Browser_Base{
         actions.doubleClick(element).perform();
     }
 
+    public void rightClick (WebElement element) {
+        Actions action = new Actions(driver);
+        action.moveToElement(element);
+        action.contextClick().perform();
+
+    }
+
 
 
     public void appPropertyAccess () throws IOException {
@@ -95,6 +116,7 @@ public class Utils extends Browser_Base{
         return System.getProperty("user.dir")+"/Screen_Capture_Result/"+testCaseName+".png";
     }
     /*Get Screen shot end*/
+
 
 
 
