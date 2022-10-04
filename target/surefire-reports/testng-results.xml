@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-02T15:38:03Z" name="Test_Suite" finished-at="2022-10-02T15:38:16Z" duration-ms="13775">
+    <groups>
+    </groups>
+    <test started-at="2022-10-02T15:38:03Z" name="Sub_Suite_1" finished-at="2022-10-02T15:38:16Z" duration-ms="13775">
+      <class name="PSSTestRunner.PSSTestRunner">
+        <test-method is-config="true" signature="Intialize(java.lang.String, java.lang.String)[pri:0, instance:PSSTestRunner.PSSTestRunner@660acfb]" started-at="2022-10-02T15:38:03Z" name="Intialize" finished-at="2022-10-02T15:38:10Z" duration-ms="7536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://flyegypt.avtra.com/admin/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Intialize -->
+        <test-method is-config="true" signature="validateCurrentURL(java.lang.String, java.lang.String)[pri:0, instance:PSSTestRunner.PSSTestRunner@660acfb]" started-at="2022-10-02T15:38:10Z" name="validateCurrentURL" finished-at="2022-10-02T15:38:10Z" depends-on-methods="Utilities.Browser_Base.Intialize" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://flyegypt.avtra.com/admin/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCurrentURL -->
+        <test-method is-config="true" signature="implicitwait()[pri:0, instance:PSSTestRunner.PSSTestRunner@660acfb]" started-at="2022-10-02T15:38:10Z" name="implicitwait" finished-at="2022-10-02T15:38:10Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicitwait -->
+        <test-method signature="LogInToThePSSAdmin(java.lang.String)[pri:1, instance:PSSTestRunner.PSSTestRunner@660acfb]" started-at="2022-10-02T15:38:10Z" name="LogInToThePSSAdmin" description="PSS Log in test case" finished-at="2022-10-02T15:38:14Z" duration-ms="3842" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CRS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogInToThePSSAdmin -->
+        <test-method is-config="true" signature="implicitwait()[pri:0, instance:PSSTestRunner.PSSTestRunner@660acfb]" started-at="2022-10-02T15:38:14Z" name="implicitwait" finished-at="2022-10-02T15:38:14Z" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicitwait -->
+        <test-method signature="ClickOnToogleMenu()[pri:1, instance:PSSTestRunner.PSSTestRunner@660acfb]" started-at="2022-10-02T15:38:14Z" name="ClickOnToogleMenu" description="Click on toogle menu test case" finished-at="2022-10-02T15:38:15Z" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnToogleMenu -->
+        <test-method is-config="true" signature="implicitwait()[pri:0, instance:PSSTestRunner.PSSTestRunner@660acfb]" started-at="2022-10-02T15:38:15Z" name="implicitwait" finished-at="2022-10-02T15:38:15Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicitwait -->
+        <test-method signature="ClickOnRole()[pri:2, instance:PSSTestRunner.PSSTestRunner@660acfb]" started-at="2022-10-02T15:38:15Z" name="ClickOnRole" description="Click on toogle menu test case" finished-at="2022-10-02T15:38:16Z" depends-on-methods="PSSTestRunner.PSSTestRunner.ClickOnToogleMenu, PSSTestRunner.PSSTestRunner.LogInToThePSSAdmin" duration-ms="684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnRole -->
+        <test-method is-config="true" signature="close()[pri:0, instance:PSSTestRunner.PSSTestRunner@660acfb]" started-at="2022-10-02T15:38:16Z" name="close" finished-at="2022-10-02T15:38:16Z" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="endSuite(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:PSSTestRunner.PSSTestRunner@660acfb]" started-at="2022-10-02T15:38:17Z" name="endSuite" finished-at="2022-10-02T15:38:22Z" duration-ms="4560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[origin/master]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PSS Admin Regression Test Result on ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dcs.selenium.report@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[lmsbruovggrocqxk]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vikasithasouth@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endSuite -->
+      </class> <!-- PSSTestRunner.PSSTestRunner -->
+    </test> <!-- Sub_Suite_1 -->
+  </suite> <!-- Test_Suite -->
+</testng-results>
