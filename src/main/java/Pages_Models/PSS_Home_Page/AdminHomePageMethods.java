@@ -1,6 +1,4 @@
-package PSS_Pages.PSS_Home_Page;
-
-import org.openqa.selenium.By;
+package Pages_Models.PSS_Home_Page;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package PSS_Pages.PSS_Home_Page;
+package Pages_Models.PSS_Home_Page;
 
 import Utilities.Utils;
 

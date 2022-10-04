@@ -1,10 +1,10 @@
-package PSS_Pages.PSS_Login_Page;
+package Pages_Models.PSS_Login_Page;
 
 import Utilities.Utils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import javax.xml.xpath.XPath;
+
 import java.io.IOException;
 
 public class AdminLoginPageObjects extends Utils {

@@ -1,4 +1,4 @@
-package PSS_Pages.PSS_Login_Page;
+package Pages_Models.PSS_Login_Page;
 import java.io.IOException;
 
 public class AdminLoginPageMethods extends AdminLoginPageObjects {

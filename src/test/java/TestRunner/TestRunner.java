@@ -1,15 +1,15 @@
-package PSSTestRunner;
+package TestRunner;
 
 
-import PSS_Pages.PSS_Home_Page.AdminHomePageMethods;
-import PSS_Pages.PSS_Login_Page.AdminLoginPageMethods;
+import Pages_Models.Home_Page.HomePageMethods;
+import Pages_Models.PSS_Home_Page.AdminHomePageMethods;
+import Pages_Models.PSS_Login_Page.AdminLoginPageMethods;
 import Utilities.Utils;
 import com.sun.net.httpserver.Authenticator;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class PSSTestRunner extends Utils {
+public class TestRunner extends Utils {
 
     String FilePath = "/home/user/Desktop/Udemy/Test/Test Data/PSStestdata.xls";
     FileInputStream fs = new FileInputStream(FilePath);
@@ -26,7 +26,8 @@ public class PSSTestRunner extends Utils {
     Sheet PSSAdminHomaPageSh = wb.getSheet("PssAdminHomePage");
 
 
-    public PSSTestRunner() throws IOException, BiffException {
+
+    public TestRunner() throws IOException, BiffException {
     }
 
     @Parameters({"url", "browser"})
@@ -86,6 +87,15 @@ public class PSSTestRunner extends Utils {
         AdminHomePageMethods newadminhomepage = PageFactory.initElements(driver, AdminHomePageMethods.class);
         newadminhomepage.gotologgedInUserinfor();
         newadminhomepage.clickLogoutButton();
+
+
+    }
+
+
+    @Test (priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Read the banner text on home page")
+    public void ReadTheBannerOnHomePage (){
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        newhomepage.getBannerText();
 
 
     }

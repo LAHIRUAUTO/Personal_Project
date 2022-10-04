@@ -1,4 +1,4 @@
-package PSS_Pages.PSS_Role_Page;
+package Pages_Models.PSS_Role_Page;
 
 public class AdminRolePageMethods {
 }

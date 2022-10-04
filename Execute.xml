@@ -8,26 +8,23 @@
 
     <!--Globle Parameters for All Browsers -->
     <parameter name="Branch" value="${branch}"/><!--PSS_Release_21.2 Patch-47-->
-    <parameter name="Module" value="PSS Admin Regression Test Result on "/>
-    <parameter name="url" value="https://flyegypt.avtra.com/admin/login"/>
-    <parameter name="title" value="CRS"/>
+    <parameter name="Module" value="Selenium Demo Test Result on "/>
+    <parameter name="url" value="http://the-internet.herokuapp.com/"/>
+    <parameter name="title" value="The Internet"/>
     <parameter name="testerName" value="Lahiru Vikasitha"/>
     <parameter name="TestReportSenderMailAddress" value="dcs.selenium.report@gmail.com"/>
     <parameter name="TestReportSenderMailPassword" value="lmsbruovggrocqxk"/>
-    <parameter name="TestReportReceiverMailAddress" value="${reportReceiverMail}"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
-    <parameter name="browser" value="${browserName}"/><!--chrome / firefox / edge / chromeheadless / ${browserName}-->
+    <parameter name="TestReportReceiverMailAddress" value="vikasithasouth@gmail.com"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
+    <parameter name="browser" value="CDTchrome"/><!--chrome / firefox / edge / chromeheadless / ${browserName}-->
 
 
 
     <test verbose="2" preserve-order="true" name="Sub_Suite_1">
 
         <classes>
-            <class name="PSSTestRunner.PSSTestRunner">
+            <class name="TestRunner.TestRunner">
                 <methods>
-                    <include name="LogInToThePSSAdmin"/>
-                    <include name="ClickOnToogleMenu"/>
-                    <include name="SearchForRoles"/>
-                    <exclude name="LogOutFromThePSSAdmin"/>
+                    <include name="ReadTheBannerOnHomePage"/>
                 </methods>
             </class>
         </classes>
@@ -35,7 +32,7 @@
     <!--<test verbose="2" preserve-order="true" name="Sub_Suite_2">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="PSSTestRunner.PSSTestRunner">
+            <class name="PSSTestRunner.TestRunner">
                 <methods>
                     <include name="LogInToThePSSAdmin"/>
                     <include name="LogOutFromThePSSAdmin"/>
@@ -46,7 +43,7 @@
     <!--<test verbose="2" preserve-order="true" name="Sub_Suite_3">
         <parameter name="browser" value="edge"/>
         <classes>
-            <class name="PSSTestRunner.PSSTestRunner">
+            <class name="PSSTestRunner.TestRunner">
                 <methods>
                     <include name="LogInToThePSSAdmin"/>
                     <include name="LogOutFromThePSSAdmin"/>
@@ -58,7 +55,7 @@
     <!--<test verbose="2" preserve-order="true" name="Sub_Suite_1">
         <parameter name="browser" value="chromeheadless"/>
         <classes>
-            <class name="PSSTestRunner.PSSTestRunner">
+            <class name="PSSTestRunner.TestRunner">
                 <methods>
                     <include name="LogInToThePSSAdmin"/>
                     <include name="ClickOnToogleMenu"/>
