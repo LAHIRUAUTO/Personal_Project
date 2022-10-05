@@ -1,6 +1,6 @@
 package Old_Pages_Models.Home_Page;
 
-public class HomePageMethods extends HomePageObjects {
+public class HomePageMethodsOld extends HomePageObjectsOld {
 
     public void getBannerText () {
         explicitWaitElementVisible (bannerLocator);

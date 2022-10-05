@@ -25,14 +25,9 @@
 
             <class name="TestRunner.TestRunner">
                 <methods>
-                    <exclude name="ReadTheBannerOnHomePage"/>
-                    <exclude name="GoToABTestingPage"/>
-                    <exclude name="GoToAddRemoveElementPage"/>
-                    <exclude name="GoToBasicLoginPage"/>
-                    <exclude name="GoToCheckboxesPage"/>
-                    <exclude name="GoToContextMenuPage"/>
-                    <include name="GoToDragAndDropPage"/>
-
+                    <exclude name="registerForBookStoreApplication"/>
+                    <exclude name="goToWdgetsScreen"/>
+                    <include name="goToWdgetsScreen2"/>
 
 
                 </methods>

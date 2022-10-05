@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePageObjects extends Utils {
+public class HomePageObjectsOld extends Utils {
 
     @FindBy(xpath = "/html/body/div[2]/div/h1\n")
     @CacheLookup

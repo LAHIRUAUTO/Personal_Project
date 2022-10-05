@@ -96,6 +96,17 @@ public class Utils extends Browser_Base{
 
     }
 
+    public void scrollDown ( ) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,250)", "");
+    }
+
+    public static WebElement elementByXpath(String xpath) {
+        return driver.findElement(By.xpath(xpath));
+
+    }
+
+
 
 
     public void appPropertyAccess () throws IOException {
