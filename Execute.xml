@@ -29,7 +29,9 @@
                     <exclude name="goToWdgetsScreen"/>
                     <exclude name="goToWdgetsScreen2"/>
                     <exclude name="goToAccordian"/>
-                    <include name="goToSlider"/>
+                    <exclude name="goToSlider"/>
+                    <include name="goToProgressBar"/>
+
                 </methods>
             </class>
         </classes>

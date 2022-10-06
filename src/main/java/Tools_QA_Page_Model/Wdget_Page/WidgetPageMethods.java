@@ -5,8 +5,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class WidgetPageMethods extends WidgetPageObjects{
@@ -208,7 +211,22 @@ public class WidgetPageMethods extends WidgetPageObjects{
 
         }
 
+    }
 
+    public void clickProgressBarButton () {
+        explicitWaitElementClickable(progressBarButton);
+        progressBarButton.click();
+    }
+
+    public void startAndStopProgressBar (int requiredProgressBarValue) throws InterruptedException {
+        explicitWaitElementClickable(startStopButtonLocator);
+        startStopButtonLocator.click();
+        Thread.sleep(1000);
+
+        WebDriverWait explicitwait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement currentProgressBar = driver.findElement(By.cssSelector("div[class=\"progress-bar bg-success\"]"));
+        explicitwait.until(ExpectedConditions.visibilityOf(currentProgressBar));
+        resetButtonLocator.click();
 
 
 

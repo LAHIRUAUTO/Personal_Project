@@ -1,6 +1,7 @@
 package Tools_QA_Page_Model.Wdget_Page;
 
 import Utilities.Utils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -67,7 +68,25 @@ public class WidgetPageObjects extends Utils {
     @CacheLookup
     WebElement sliderValue;
 
-//*[@id="sliderValue"]
+    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[4]/div/ul/li[5]/span\n")
+    @CacheLookup
+    WebElement progressBarButton;
+
+    @FindBy(xpath = "//*[@id=\"startStopButton\"]\n")
+    @CacheLookup
+    WebElement startStopButtonLocator;
+
+    @FindBy(xpath = "//*[@id=\"resetButton\"]\n")
+    @CacheLookup
+    WebElement resetButtonLocator;
+
+
+
+
+
+
+
+
 
 
 

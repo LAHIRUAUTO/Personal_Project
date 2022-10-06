@@ -252,5 +252,17 @@ public class TestRunner extends Utils {
         newwidgetpage.clickOnSliderPointerAndMove(Integer.parseInt(requiredPixelToMove));
     }
 
+    @Test ( priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    public void goToProgressBar () throws InterruptedException {
+        String requiredProgressBarValue = DataSeetSh.getCell("C5").getContents();
+
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        WidgetPageMethods newwidgetpage = PageFactory.initElements(driver, WidgetPageMethods.class);
+        newhomepage.clickWidgetsLocator();
+        scrollDown();
+        newwidgetpage.clickProgressBarButton();
+        newwidgetpage.startAndStopProgressBar(Integer.parseInt(requiredProgressBarValue));
+    }
+
 
 }
