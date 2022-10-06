@@ -2,7 +2,9 @@ package Tools_QA_Page_Model.Wdget_Page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
@@ -116,7 +118,7 @@ public class WidgetPageMethods extends WidgetPageObjects{
 
     public void selectDepartureDateFrom2(int departureDate) {
         if (departureDate >= 26) {
-            for (int j = 2; j <= 7; j++) {
+            for (int j = 2; j <= 6; j++) {
 
                 for (int i = 1; i <= 7; i++) {
 
@@ -155,8 +157,63 @@ public class WidgetPageMethods extends WidgetPageObjects{
 
 
 
+    public void clickdatesDropDownInCalander2 (String timeslot) {
 
 
+        for (int i = 1; i<=96; i++) {
+            WebElement startTimeLocator = elementByXpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[3]/div[2]/div/ul/li["+i+"]\n");
+            if (timeslot.equalsIgnoreCase(startTimeLocator.getText())) {
+                startTimeLocator.click();
+                break;
+            }
+            else {
+                continue;
+            }
+        }
+
+    }
+
+    public void clickAccordianButton () {
+        explicitWaitElementClickable(accordianButton);
+        accordianButton.click();
+    }
+
+    public void clickOnAccordian1 () {
+        explicitWaitElementClickable(sectionHeader1Button);
+        sectionHeader1Button.click();
+    }
+
+    public void clickSliderButton () {
+        explicitWaitElementClickable(sliderButton);
+        sliderButton.click();
+    }
+
+    public void clickOnSliderPointerAndMove (int requiredPixelToMove) {
+        explicitWaitElementClickable(sliderLocator);
+        explicitWaitElementVisible(sliderValue);
+        Actions move = new Actions(driver);
+        move.moveToElement(sliderLocator).clickAndHold(sliderLocator).moveByOffset(-(sliderLocator.getSize().getWidth()),0).release().perform();
+        int sliderValue = Integer.parseInt(sliderLocator.getAttribute("value"));
+        System.out.println(sliderLocator.getSize().getWidth());
+
+        for (int i = 0; i< requiredPixelToMove; i++) {
+
+            if (requiredPixelToMove == sliderValue) {
+                break;
+            }
+            else {
+                move.sendKeys(Keys.ARROW_RIGHT).perform();
+                continue;
+            }
+
+        }
+
+
+
+
+
+
+    }
 
 
 

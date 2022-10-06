@@ -43,9 +43,33 @@ public class WidgetPageObjects extends Utils {
     @CacheLookup
     WebElement yearDropDownInCalander2;
 
-    @FindBy (xpath = "/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[3]/div[2]/div/ul/li[1]\n")
+    @FindBy (xpath = "/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[3]/div[2]/div/ul\n")
     @CacheLookup
-    WebElement startTime;
+    WebElement startTimeListLocator;
+
+    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[4]/div/ul/li[1]/span\n")
+    @CacheLookup
+    WebElement accordianButton;
+
+    @FindBy(xpath = "//*[@id=\"section1Heading\"]")
+    @CacheLookup
+    WebElement sectionHeader1Button;
+
+    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[4]/div/ul/li[4]/span\n")
+    @CacheLookup
+    WebElement sliderButton;
+
+    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div[2]/form/div/div[1]/span/input\n")
+    @CacheLookup
+    WebElement sliderLocator;
+
+    @FindBy(xpath = "//*[@id=\"sliderValue\"]\n")
+    @CacheLookup
+    WebElement sliderValue;
+
+//*[@id="sliderValue"]
+
+
 
 
 

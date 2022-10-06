@@ -27,9 +27,9 @@
                 <methods>
                     <exclude name="registerForBookStoreApplication"/>
                     <exclude name="goToWdgetsScreen"/>
-                    <include name="goToWdgetsScreen2"/>
-
-
+                    <exclude name="goToWdgetsScreen2"/>
+                    <exclude name="goToAccordian"/>
+                    <include name="goToSlider"/>
                 </methods>
             </class>
         </classes>

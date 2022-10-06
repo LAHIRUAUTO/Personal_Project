@@ -210,6 +210,7 @@ public class TestRunner extends Utils {
         String date = DataSeetSh.getCell("C4").getContents();
         String month = DataSeetSh.getCell("D4").getContents();
         String year = DataSeetSh.getCell("E4").getContents();
+        String timeSlot = DataSeetSh.getCell("F4").getContents();
 
 
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
@@ -223,8 +224,32 @@ public class TestRunner extends Utils {
         newwidgetpage.clickYearDropDownInCalanser2();
         newwidgetpage.selectYearInCalanderDropDown2(year);
         newwidgetpage.selectDepartureDateFrom2(Integer.parseInt(date));
+        newwidgetpage.clickdatesDropDownInCalander2(timeSlot);
 
 
+    }
+
+    @Test ( priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    public void goToAccordian () {
+
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        WidgetPageMethods newwidgetpage = PageFactory.initElements(driver, WidgetPageMethods.class);
+        newhomepage.clickWidgetsLocator();
+        scrollDown();
+        newwidgetpage.clickAccordianButton();
+        newwidgetpage.clickOnAccordian1();
+    }
+
+    @Test ( priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    public void goToSlider () {
+        String requiredPixelToMove = DataSeetSh.getCell("C5").getContents();
+
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        WidgetPageMethods newwidgetpage = PageFactory.initElements(driver, WidgetPageMethods.class);
+        newhomepage.clickWidgetsLocator();
+        scrollDown();
+        newwidgetpage.clickSliderButton();
+        newwidgetpage.clickOnSliderPointerAndMove(Integer.parseInt(requiredPixelToMove));
     }
 
 
