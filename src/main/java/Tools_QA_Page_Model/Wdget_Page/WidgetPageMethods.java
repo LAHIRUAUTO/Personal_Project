@@ -52,10 +52,12 @@ public class WidgetPageMethods extends WidgetPageObjects{
                     String returnText = dateInCalanderxpath.getText();
                     if (Integer.parseInt(returnText) == departureDate) {
                         dateInCalanderxpath.click();
-                        break;
+
                     } else {
                         continue;
                     }
+                    break;
+
 
                 }
             }
@@ -70,10 +72,10 @@ public class WidgetPageMethods extends WidgetPageObjects{
                     String returnText = dateInCalanderxpath.getText();
                     if (Integer.parseInt(returnText) == departureDate) {
                         dateInCalanderxpath.click();
-                        break;
                     } else {
                         continue;
                     }
+                    break;
 
                 }
             }
@@ -120,7 +122,7 @@ public class WidgetPageMethods extends WidgetPageObjects{
     }
 
     public void selectDepartureDateFrom2(int departureDate) {
-        if (departureDate >= 26) {
+        if (departureDate >= 25) {
             for (int j = 2; j <= 6; j++) {
 
                 for (int i = 1; i <= 7; i++) {
@@ -130,10 +132,11 @@ public class WidgetPageMethods extends WidgetPageObjects{
                     String returnText = dateInCalanderxpath.getText();
                     if (Integer.parseInt(returnText) == departureDate) {
                         dateInCalanderxpath.click();
-                        break;
                     } else {
                         continue;
                     }
+                    break;
+
 
                 }
             }
@@ -148,10 +151,11 @@ public class WidgetPageMethods extends WidgetPageObjects{
                     String returnText = dateInCalanderxpath.getText();
                     if (Integer.parseInt(returnText) == departureDate) {
                         dateInCalanderxpath.click();
-                        break;
                     } else {
                         continue;
                     }
+                    break;
+
 
                 }
             }
@@ -221,8 +225,6 @@ public class WidgetPageMethods extends WidgetPageObjects{
     public void startAndStopProgressBar (int requiredProgressBarValue) throws InterruptedException {
         explicitWaitElementClickable(startStopButtonLocator);
         startStopButtonLocator.click();
-        Thread.sleep(1000);
-
         WebDriverWait explicitwait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement currentProgressBar = driver.findElement(By.cssSelector("div[class=\"progress-bar bg-success\"]"));
         explicitwait.until(ExpectedConditions.visibilityOf(currentProgressBar));

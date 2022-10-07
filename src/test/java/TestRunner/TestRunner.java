@@ -163,7 +163,7 @@ public class TestRunner extends Utils {
 
     }
 
-    @Test ( priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    @Test ( groups = {"BookStore"},priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
     public void registerForBookStoreApplication () {
         String firstName = DataSeetSh.getCell("C3").getContents();
         String lastName = DataSeetSh.getCell("D3").getContents();
@@ -185,7 +185,7 @@ public class TestRunner extends Utils {
         newbsregisterpage.clickOnCaptcha();
         newbsregisterpage.clickOnRegisterButton();
     }
-    @Test ( priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    @Test ( groups = {"Widgets"}, priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
     public void goToWdgetsScreen () {
         String date = DataSeetSh.getCell("C4").getContents();
         String month = DataSeetSh.getCell("D4").getContents();
@@ -205,7 +205,7 @@ public class TestRunner extends Utils {
 
     }
 
-    @Test ( priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    @Test ( groups = {"Widgets"}, priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
     public void goToWdgetsScreen2 () {
         String date = DataSeetSh.getCell("C4").getContents();
         String month = DataSeetSh.getCell("D4").getContents();
@@ -215,7 +215,6 @@ public class TestRunner extends Utils {
 
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
         WidgetPageMethods newwidgetpage = PageFactory.initElements(driver, WidgetPageMethods.class);
-        newhomepage.clickWidgetsLocator();
         scrollDown();
         newwidgetpage.clickDatePickerButton();
         newwidgetpage.clickDatePicker2();
@@ -229,36 +228,33 @@ public class TestRunner extends Utils {
 
     }
 
-    @Test ( priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    @Test ( groups = {"Widgets"}, priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
     public void goToAccordian () {
 
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
         WidgetPageMethods newwidgetpage = PageFactory.initElements(driver, WidgetPageMethods.class);
-        newhomepage.clickWidgetsLocator();
         scrollDown();
         newwidgetpage.clickAccordianButton();
         newwidgetpage.clickOnAccordian1();
     }
 
-    @Test ( priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    @Test ( groups = {"Widgets"}, priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
     public void goToSlider () {
         String requiredPixelToMove = DataSeetSh.getCell("C5").getContents();
 
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
         WidgetPageMethods newwidgetpage = PageFactory.initElements(driver, WidgetPageMethods.class);
-        newhomepage.clickWidgetsLocator();
         scrollDown();
         newwidgetpage.clickSliderButton();
         newwidgetpage.clickOnSliderPointerAndMove(Integer.parseInt(requiredPixelToMove));
     }
 
-    @Test ( priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    @Test ( groups = {"Widgets"}, priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
     public void goToProgressBar () throws InterruptedException {
         String requiredProgressBarValue = DataSeetSh.getCell("C5").getContents();
 
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
         WidgetPageMethods newwidgetpage = PageFactory.initElements(driver, WidgetPageMethods.class);
-        newhomepage.clickWidgetsLocator();
         scrollDown();
         newwidgetpage.clickProgressBarButton();
         newwidgetpage.startAndStopProgressBar(Integer.parseInt(requiredProgressBarValue));
