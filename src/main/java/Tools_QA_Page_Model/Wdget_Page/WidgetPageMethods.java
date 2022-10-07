@@ -45,36 +45,34 @@ public class WidgetPageMethods extends WidgetPageObjects{
         if (departureDate >= 26) {
             for (int j = 2; j <= 7; j++) {
 
-                for (int i = 1; i <= 7; i++) {
-
+                int i = 1;
+                while (i<=7){
                     WebElement dateInCalanderxpath = elementByXpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/div[2]/div/div/div[2]/div[2]/div[" + j + "]/div[" + i + "]\n");
                     System.out.println(dateInCalanderxpath.getText());
                     String returnText = dateInCalanderxpath.getText();
                     if (Integer.parseInt(returnText) == departureDate) {
                         dateInCalanderxpath.click();
-
-                    } else {
-                        continue;
                     }
+                    i++;
                     break;
 
-
                 }
+
+
             }
         }
         else {
             for (int j = 1; j <= 7; j++) {
 
-                for (int i = 1; i <= 7; i++) {
-
+                int i = 1;
+                while (i<=7){
                     WebElement dateInCalanderxpath = elementByXpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/div[2]/div/div/div[2]/div[2]/div[" + j + "]/div[" + i + "]\n");
                     System.out.println(dateInCalanderxpath.getText());
                     String returnText = dateInCalanderxpath.getText();
                     if (Integer.parseInt(returnText) == departureDate) {
                         dateInCalanderxpath.click();
-                    } else {
-                        continue;
                     }
+                    i++;
                     break;
 
                 }
@@ -125,37 +123,34 @@ public class WidgetPageMethods extends WidgetPageObjects{
         if (departureDate >= 25) {
             for (int j = 2; j <= 6; j++) {
 
-                for (int i = 1; i <= 7; i++) {
-
+                int i = 1;
+                while (i<=7){
                     WebElement dateInCalanderxpath = elementByXpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div[2]/div[" + j + "]/div[" + i + "]\n");
                     System.out.println(dateInCalanderxpath.getText());
                     String returnText = dateInCalanderxpath.getText();
                     if (Integer.parseInt(returnText) == departureDate) {
                         dateInCalanderxpath.click();
-                    } else {
-                        continue;
                     }
+                    i++;
                     break;
 
-
                 }
+
             }
         }
         else {
-            for (int j = 1; j <= 7; j++) {
+            for (int j = 1; j <= 6; j++) {
 
-                for (int i = 1; i <= 7; i++) {
-
-                    WebElement dateInCalanderxpath = elementByXpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/div[2]/div/div/div[2]/div[2]/div[" + j + "]/div[" + i + "]\n");
+                int i = 1;
+                while (i<=7){
+                    WebElement dateInCalanderxpath = elementByXpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div[2]/div[" + j + "]/div[" + i + "]\n");
                     System.out.println(dateInCalanderxpath.getText());
                     String returnText = dateInCalanderxpath.getText();
                     if (Integer.parseInt(returnText) == departureDate) {
                         dateInCalanderxpath.click();
-                    } else {
-                        continue;
                     }
+                    i++;
                     break;
-
 
                 }
             }
