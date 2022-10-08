@@ -111,6 +111,11 @@ public class Utils extends Browser_Base{
 
     }
 
+    public static WebElement elementByCssSelector(String cssSelector) {
+        return driver.findElement(By.cssSelector(cssSelector));
+
+    }
+
 
 
 
@@ -218,6 +223,9 @@ public class Utils extends Browser_Base{
         driver.navigate().back();
     }
 
+    public static void reFresh () {
+        driver.navigate().refresh();
+    }
 
 
 

@@ -260,5 +260,21 @@ public class TestRunner extends Utils {
         newwidgetpage.startAndStopProgressBar(Integer.parseInt(requiredProgressBarValue));
     }
 
+    @Test ( groups = {"Widgets"}, priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    public void goToToolTipsScreen () throws InterruptedException {
+        String tooltipTextValue = DataSeetSh.getCell("C5").getContents();
+
+
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        WidgetPageMethods newwidgetpage = PageFactory.initElements(driver, WidgetPageMethods.class);
+        newhomepage.clickWidgetsLocator();
+        newwidgetpage.clickToolTipsButton();
+        newwidgetpage.goToToolTip1();
+        newwidgetpage.goToToolTip2(tooltipTextValue);
+        newwidgetpage.goToToolTip3();
+
+
+    }
+
 
 }

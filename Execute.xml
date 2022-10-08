@@ -24,11 +24,12 @@
             <class name="TestRunner.TestRunner">
                 <methods>
                     <exclude name="registerForBookStoreApplication"/>
-                    <include name="goToWdgetsScreen"/>
-                    <include name="goToWdgetsScreen2"/>
-                    <include name="goToAccordian"/>
-                    <include name="goToSlider"/>
-                    <include name="goToProgressBar"/>
+                    <exclude name="goToWdgetsScreen"/>
+                    <exclude name="goToWdgetsScreen2"/>
+                    <exclude name="goToAccordian"/>
+                    <exclude name="goToSlider"/>
+                    <exclude name="goToProgressBar"/>
+                    <include name="goToToolTipsScreen"/>
                 </methods>
             </class>
         </classes>

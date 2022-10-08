@@ -225,10 +225,48 @@ public class WidgetPageMethods extends WidgetPageObjects{
         explicitwait.until(ExpectedConditions.visibilityOf(currentProgressBar));
         resetButtonLocator.click();
 
+    }
 
+    public void clickToolTipsButton() {
+        scrollDown();
+        toolTipsButton.click();
+    }
+
+    public void goToToolTip1 () throws InterruptedException {
+        explicitWaitElementVisible(toolTip1);
+        mouseHover(toolTip1);
+        System.out.println(toolTip1.getText());
+        threadSleep();
+        WebElement actualToolTip1 =  driver.findElement(By.cssSelector("div[Class='tooltip-inner']"));
+        explicitWaitElementVisible(actualToolTip1);
+        String actualToolTip1Text = actualToolTip1.getText();
+        System.out.println(actualToolTip1Text);
 
 
     }
+
+    public void goToToolTip2 (String tooltipText) throws InterruptedException {
+        explicitWaitElementVisible(toolTip2);
+        toolTip2.click();
+        toolTip2.sendKeys(tooltipText);
+        threadSleep();
+        WebElement actualToolTip2 =  driver.findElement(By.cssSelector("div[Class='tooltip-inner']"));
+        explicitWaitElementVisible(actualToolTip2);
+        String actualToolTip2Text = actualToolTip2.getText();
+        System.out.println(actualToolTip2Text);
+    }
+
+    public void goToToolTip3 () throws InterruptedException {
+        explicitWaitElementVisible(toolTip3);
+        mouseHover(toolTip3);
+        System.out.println(toolTip3.getText());
+        threadSleep();
+        WebElement actualToolTip3 =  driver.findElement(By.cssSelector("div[Class='tooltip-inner']"));
+        explicitWaitElementVisible(actualToolTip3);
+        String actualToolTip3Text = actualToolTip3.getText();
+        System.out.println(actualToolTip3Text);
+    }
+
 
 
 

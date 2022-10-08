@@ -80,6 +80,33 @@ public class WidgetPageObjects extends Utils {
     @CacheLookup
     WebElement resetButtonLocator;
 
+    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[4]/div/ul/li[7]/span\n")
+    @CacheLookup
+    WebElement toolTipsButton;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/button[1]\n")
+    @CacheLookup
+    WebElement toolTip1;
+
+
+
+    @FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/input[1]\n")
+    @CacheLookup
+    WebElement toolTip2;
+
+    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[3]/a[1]\n")
+    @CacheLookup
+    WebElement toolTip3;
+
+
+
+
+
+
+
+
+
+
 
 
 
