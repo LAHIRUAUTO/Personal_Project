@@ -20,4 +20,9 @@ public class HomePageMethods extends HomePageObjects {
         explicitWaitElementClickable(BSAProfileRegisterLocator);
         BSAProfileRegisterLocator.click();
     }
+
+    public void clickFramewsAndWindowsLocator () {
+        explicitWaitElementClickable(FramewsAndWindowsLocator);
+        FramewsAndWindowsLocator.click();
+    }
 }

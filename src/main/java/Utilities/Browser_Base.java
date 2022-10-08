@@ -72,6 +72,7 @@ public class Browser_Base {
 
         }
         driver.get(url);
+        //driver.navigate().to(url);
         driver.manage().window().maximize();
 
 
@@ -80,6 +81,6 @@ public class Browser_Base {
     @AfterTest
     public static void close() {
 
-        //sdriver.close();
+        //driver.close();
     }
 }

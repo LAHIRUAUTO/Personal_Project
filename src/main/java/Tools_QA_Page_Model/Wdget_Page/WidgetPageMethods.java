@@ -250,10 +250,14 @@ public class WidgetPageMethods extends WidgetPageObjects{
         toolTip2.click();
         toolTip2.sendKeys(tooltipText);
         threadSleep();
-        WebElement actualToolTip2 =  driver.findElement(By.cssSelector("div[Class='tooltip-inner']"));
+        JavascriptExecutor j = (JavascriptExecutor) driver;
+        j.executeScript("document.getElementByid('tooltip-inner').value='You hovered over the Button';");
+        String s = (String) j.executeScript("return document.getElementById('tooltip-inner').value");
+        System.out.print("Value entered in hidden field: " +s);
+        /*WebElement actualToolTip2 =  driver.findElement(By.cssSelector("div[Class='tooltip-inner']"));
         explicitWaitElementVisible(actualToolTip2);
         String actualToolTip2Text = actualToolTip2.getText();
-        System.out.println(actualToolTip2Text);
+        System.out.println(actualToolTip2Text);*/
     }
 
     public void goToToolTip3 () throws InterruptedException {

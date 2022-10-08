@@ -14,8 +14,8 @@
     <parameter name="testerName" value="Lahiru Vikasitha"/>
     <parameter name="TestReportSenderMailAddress" value="dcs.selenium.report@gmail.com"/>
     <parameter name="TestReportSenderMailPassword" value="lmsbruovggrocqxk"/>
-    <parameter name="TestReportReceiverMailAddress" value="vikasithasouth@gmail.com"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
-    <parameter name="browser" value="CDTchrome"/><!--chrome / firefox / edge / chromeheadless / ${browserName}-->
+    <parameter name="TestReportReceiverMailAddress" value="${reportReceiverMail}"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
+    <parameter name="browser" value="${browserName}"/><!--chrome / firefox / edge / chromeheadless / ${browserName}-->
 
 
     <test verbose="2" preserve-order="true" name="Sub_Suite_2">
@@ -30,6 +30,8 @@
                     <exclude name="goToSlider"/>
                     <exclude name="goToProgressBar"/>
                     <include name="goToToolTipsScreen"/>
+                    <exclude name="goToFramesAndWindowsScreen"/>
+
                 </methods>
             </class>
         </classes>

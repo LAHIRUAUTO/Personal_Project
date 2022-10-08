@@ -20,10 +20,10 @@ import java.util.Properties;
 public class Utils extends Browser_Base{
 
     //Implicit Wait start
-    @BeforeMethod
+    @BeforeTest
     public static void implicitwait () {
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
     }
     //Implicit Wait end
 

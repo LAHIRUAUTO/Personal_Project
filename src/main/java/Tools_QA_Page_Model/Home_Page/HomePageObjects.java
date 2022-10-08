@@ -42,6 +42,10 @@ public class HomePageObjects extends Utils {
     @CacheLookup
     WebElement BSAProfileRegisterLocator;
 
+    @FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/*[name()='svg'][1]\n")
+    @CacheLookup
+    WebElement FramewsAndWindowsLocator;
+
 
 
 
