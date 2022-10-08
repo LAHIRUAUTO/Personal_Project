@@ -19,7 +19,7 @@ import java.util.Optional;
 import java.util.Properties;
 
 public class Browser_Base {
-    public static ChromeDriver driver;
+    public static WebDriver driver;
 
 
     @Parameters({"browser", "url"})
@@ -33,33 +33,33 @@ public class Browser_Base {
 
         switch (browser) {
             case "chrome" :
-                /*WebDriverManager.chromedriver().setup();
+                WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 //System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir")+"/Drivers/chromedriver_linux64/chromedriver"));
                 //create chrome instance
                 //driver = new ChromeDriver();
-                break;*/
+                break;
             case "firefox" :
-                /*WebDriverManager.firefoxdriver().setup();
+                WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
-                break;*/
+                break;
             case "edge" :
-                /*WebDriverManager.edgedriver().setup();
+                WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
-                break;*/
+                break;
             case "chromeheadless" :
-                /*WebDriverManager.chromedriver().setup();
+                WebDriverManager.chromedriver().setup();
                 ChromeOptions option = new ChromeOptions();
                 option.setHeadless(true);
-                driver = new ChromeDriver(option);*/
+                driver = new ChromeDriver(option);
 
             case "CDTchrome" :
                 /*WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();*/
-                System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir")+"/Drivers/chromedriver_linux64/chromedriver"));
-                driver = new ChromeDriver();
-                DevTools devTools = driver.getDevTools();
-                devTools.createSession();
+                //System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir")+"/Drivers/chromedriver_linux64/chromedriver"));
+                //driver = new ChromeDriver();
+                //DevTools devTools = driver.getDevTools();
+                //devTools.createSession();
                 //send command to CDP Methods-> CDP Methods will invoke and get access to chrome dev tools
                 //devTools.send(Emulation.setDeviceMetricsOverride(600, 1000, 50, true, java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty(), java.util.Optional.empty(), Optional.empty()));
 
@@ -81,6 +81,6 @@ public class Browser_Base {
     @AfterTest
     public static void close() {
 
-        //driver.close();
+        driver.close();
     }
 }

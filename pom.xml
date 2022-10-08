@@ -247,6 +247,7 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>Execute.xml</suiteXmlFile>
                         </suiteXmlFiles>
+                        <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>
 

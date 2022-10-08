@@ -19,8 +19,11 @@ import java.util.GregorianCalendar;
 
 public class Listener extends Utils implements ITestListener {
     ExtentTest test;
+    static String tester;
 
-    static ExtentReports extent = ExtentReporter.getReportObj ();
+
+    static ExtentReports extent = ExtentReporter.getReportObj (tester);
+
 
     @Override
     public void onTestStart(ITestResult result) {

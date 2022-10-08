@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Test_Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="Branch" value="${branch}"/>
+  <parameter name="TestReportReceiverMailAddress" value="vikasithasouth@gmail.com"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="tester" value="Got it"/>
+  <parameter name="TestReportSenderMailAddress" value="dcs.selenium.report@gmail.com"/>
+  <parameter name="TestReportSenderMailPassword" value="lmsbruovggrocqxk"/>
+  <parameter name="Module" value="Selenium Demo Test Result on "/>
+  <parameter name="title" value="ToolsQA"/>
+  <parameter name="url" value="https://demoqa.com/"/>
+  <listeners>
+    <listener class-name="Utilities.Listener"/>
+  </listeners>
+  <test thread-count="1" name="Sub_Suite_2(failed)" verbose="0">
+    <classes>
+      <class name="TestRunner.TestRunner">
+        <methods>
+          <include name="testCasename"/>
+          <include name="close"/>
+          <include name="endSuite"/>
+          <include name="implicitwait"/>
+          <include name="threadSleep"/>
+          <include name="Intialize"/>
+          <include name="goToFramesAndWindowsScreen"/>
+          <include name="goToProgressBar"/>
+          <include name="validateCurrentURL"/>
+          <include name="validateTitle"/>
+        </methods>
+      </class> <!-- TestRunner.TestRunner -->
+    </classes>
+  </test> <!-- Sub_Suite_2(failed) -->
+</suite> <!-- Failed suite [Test_Suite] -->
