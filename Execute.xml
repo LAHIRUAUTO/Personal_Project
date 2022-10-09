@@ -14,8 +14,8 @@
     <parameter name="tester" value="Got it"/>
     <parameter name="TestReportSenderMailAddress" value="dcs.selenium.report@gmail.com"/>
     <parameter name="TestReportSenderMailPassword" value="lmsbruovggrocqxk"/>
-    <parameter name="TestReportReceiverMailAddress" value="vikasithasouth@gmail.com"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
-    <parameter name="browser" value="chrome"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
+    <parameter name="TestReportReceiverMailAddress" value="${reportReceiverMail}"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
+    <parameter name="browser" value="${browserName}"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
 
 
     <test verbose="2" preserve-order="true" name="Sub_Suite_2">

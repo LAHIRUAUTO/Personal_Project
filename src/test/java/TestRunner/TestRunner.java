@@ -165,7 +165,7 @@ public class TestRunner extends Utils {
 
     @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
     public void goToFramesAndWindowsScreen () throws InterruptedException {
-        String tooltipTextValue = DataSeetSh.getCell("C5").getContents();
+        //String tooltipTextValue = DataSeetSh.getCell("C5").getContents();
 
 
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
