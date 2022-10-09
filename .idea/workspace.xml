@@ -30,70 +30,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd69a041-a04c-48ca-befc-28a93054ddbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Console_Output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Execute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Execute.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extent_Reports/Test_Result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GetABTestingDescription.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToABTestingPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToAddRemoveElementPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToBasicLoginPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToCheckboxesPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToContextMenuPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToDragAndDropPage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/LogInToThePSSAdmin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/ReadTheBannerOnHomePage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToAccordian.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToFramesAndWindowsScreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToProgressBar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToSlider.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToToolTipsScreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToWdgetsScreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToWdgetsScreen2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/registerForBookStoreApplication.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Surefire_Reports.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogInToThePSSAdmin On chrome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogInToThePSSAdmin On edge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogInToThePSSAdmin On firefox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogOutFromThePSSAdmin On chrome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogOutFromThePSSAdmin On edge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogOutFromThePSSAdmin On firefox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TestRunner.TestRunner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/Sub_Suite_2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/chromedriver_linux64/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/edgedriver_linux64/Driver_Notes/EULA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/edgedriver_linux64/Driver_Notes/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/edgedriver_linux64/Driver_Notes/credits.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/edgedriver_linux64/msedgedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/geckodriver-v0.31.0-linux64/geckodriver" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
