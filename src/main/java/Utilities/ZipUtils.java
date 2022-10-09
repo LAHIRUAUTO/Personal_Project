@@ -16,9 +16,11 @@ public class ZipUtils {
 
     private List <String> fileList;
     private static final String OUTPUT_ZIP_FILE = "Screen_Capture_Result.zip";
-    //private static final String SOURCE_FOLDER = System.getProperty("user.dir") +"Screen_Capture_Result"; // SourceFolder path
-    //
+    private static final String OUTPUT_ZIP_FILE_SUREFIRE_RPT = "Surefire_Reports.zip";
+
     private static final String SOURCE_FOLDER = System.getProperty("user.dir") +"/Screen_Capture_Result"; // SourceFolder path
+    private static final String SUREFIRE_SOURCE_FOLDER = System.getProperty("user.dir") +"/target/surefire-reports"; // SourceFolder path
+
 
 
     public ZipUtils() {
@@ -27,13 +29,15 @@ public class ZipUtils {
 
     public static void creatZipFile() {
         ZipUtils appZip = new ZipUtils();
-        appZip.generateFileList(new File(SOURCE_FOLDER));
+        appZip.generateFileList(new File(SOURCE_FOLDER,SUREFIRE_SOURCE_FOLDER));
         appZip.zipIt(OUTPUT_ZIP_FILE);
+        appZip.zipIt(OUTPUT_ZIP_FILE_SUREFIRE_RPT);
     }
 
     public void zipIt(String zipFile) {
         byte[] buffer = new byte[1024];
         String source = new File(SOURCE_FOLDER).getName();
+        String source_surefire = new File(SUREFIRE_SOURCE_FOLDER).getName();
         FileOutputStream fos = null;
         ZipOutputStream zos = null;
         try {
@@ -47,6 +51,7 @@ public class ZipUtils {
                 zos.putNextEntry(ze);
                 try {
                     in = new FileInputStream(SOURCE_FOLDER + File.separator + file);
+                    in = new FileInputStream(SUREFIRE_SOURCE_FOLDER + File.separator + file);
                     int len;
                     while ((len = in .read(buffer)) > 0) {
                         zos.write(buffer, 0, len);
@@ -72,7 +77,8 @@ public class ZipUtils {
     public void generateFileList(File node) {
         // add file only
         if (node.isFile()) {
-            fileList.add(generateZipEntry(node.toString()));
+            fileList.add(generateZipEntry1(node.toString()));
+            fileList.add(generateZipEntry2(node.toString()));
         }
 
         if (node.isDirectory()) {
@@ -83,7 +89,12 @@ public class ZipUtils {
         }
     }
 
-    private String generateZipEntry(String file) {
+    private String generateZipEntry1(String file) {
         return file.substring(SOURCE_FOLDER.length() + 1, file.length());
+
+    }
+    private String generateZipEntry2(String file) {
+        return file.substring(SUREFIRE_SOURCE_FOLDER.length() + 1, file.length());
+
     }
 }

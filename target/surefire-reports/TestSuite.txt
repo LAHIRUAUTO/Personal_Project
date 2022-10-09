@@ -1,27 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 75.943 s <<< FAILURE! - in TestSuite
-TestRunner.TestRunner.goToProgressBar  Time elapsed: 14.711 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="startStopButton"]
-' (tried for 10 second(s) with 500 milliseconds interval)
-	at TestRunner.TestRunner.goToProgressBar(TestRunner.java:147)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="startStopButton"]
-"}
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 43.838 s <<< FAILURE! - in TestSuite
+TestRunner.TestRunner.goToProgressBar  Time elapsed: 2.802 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div[class="progress-bar bg-success"]"}
   (Session info: chrome=105.0.5195.125)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'dell-inspiron-5559', ip: '192.168.1.100', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-59-generic', java.version: '11.0.7'
+System info: host: 'dell-inspiron-5559', ip: '192.168.1.101', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-59-generic', java.version: '11.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b218c33a253c0ab4eb6a32c8c9c8a781, findElement {using=xpath, value=//*[@id="startStopButton"]
-}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /tmp/.com.google.Chrome.gmxQb5}, goog:chromeOptions: {debuggerAddress: localhost:33655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33655/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b218c33a253c0ab4eb6a32c8c9c8a781
+Command: [f4c499f9aab4c837edc63ff002c258b4, findElement {using=css selector, value=div[class="progress-bar bg-success"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /tmp/.com.google.Chrome.F7atoo}, goog:chromeOptions: {debuggerAddress: localhost:33861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33861/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f4c499f9aab4c837edc63ff002c258b4
 	at TestRunner.TestRunner.goToProgressBar(TestRunner.java:147)
 
-TestRunner.TestRunner.goToFramesAndWindowsScreen  Time elapsed: 14.624 s  <<< FAILURE!
+TestRunner.TestRunner.goToFramesAndWindowsScreen  Time elapsed: 14.69 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: /html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/*[name()='svg'][1]
 ' (tried for 10 second(s) with 500 milliseconds interval)
@@ -32,11 +26,11 @@ no such element: Unable to locate element: {"method":"xpath","selector":"/html[1
   (Session info: chrome=105.0.5195.125)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'dell-inspiron-5559', ip: '192.168.1.100', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-59-generic', java.version: '11.0.7'
+System info: host: 'dell-inspiron-5559', ip: '192.168.1.101', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-59-generic', java.version: '11.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b218c33a253c0ab4eb6a32c8c9c8a781, findElement {using=xpath, value=/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/*[name()='svg'][1]
+Command: [f4c499f9aab4c837edc63ff002c258b4, findElement {using=xpath, value=/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/*[name()='svg'][1]
 }]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /tmp/.com.google.Chrome.gmxQb5}, goog:chromeOptions: {debuggerAddress: localhost:33655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33655/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b218c33a253c0ab4eb6a32c8c9c8a781
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /tmp/.com.google.Chrome.F7atoo}, goog:chromeOptions: {debuggerAddress: localhost:33861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33861/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f4c499f9aab4c837edc63ff002c258b4
 	at TestRunner.TestRunner.goToFramesAndWindowsScreen(TestRunner.java:172)
 

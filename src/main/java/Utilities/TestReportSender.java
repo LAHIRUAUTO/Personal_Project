@@ -54,28 +54,35 @@ public class TestReportSender {
             BodyPart objMessageBodyPart = new MimeBodyPart();
             BodyPart objMessageBodyPart2 = new MimeBodyPart();
             BodyPart objMessageBodyPart3 = new MimeBodyPart();
+            BodyPart objMessageBodyPart4 = new MimeBodyPart();
 
             objMessageBodyPart.setText(dtf.format(now) + " : Test Result Report Attached");
             objMessageBodyPart2.setText(dtf.format(now) + " : Test Result Screen Capture Attached");
             objMessageBodyPart3.setText(dtf.format(now) + " : Console Output Attached");
+            objMessageBodyPart4.setText(dtf.format(now) + " : Surefire report Attached");
 
             Multipart multipart = new MimeMultipart();
             Multipart multipart2 = new MimeMultipart();
             Multipart multipart3 = new MimeMultipart();
+            Multipart multipart4 = new MimeMultipart();
 
             multipart.addBodyPart(objMessageBodyPart);
             multipart2.addBodyPart(objMessageBodyPart2);
             multipart3.addBodyPart(objMessageBodyPart3);
+            multipart4.addBodyPart(objMessageBodyPart4);
 
             objMessageBodyPart = new MimeBodyPart();
             objMessageBodyPart2 = new MimeBodyPart();
             objMessageBodyPart3 = new MimeBodyPart();
+            objMessageBodyPart4 = new MimeBodyPart();
 
 //Set path to the report file
 
             String filename = System.getProperty("user.dir") +"/Extent_Reports/Test_Result.html";
             String filename2 = System.getProperty("user.dir") +"/Screen_Capture_Result.zip";
             String filename3 = System.getProperty("user.dir") +"/Console_Output.txt";
+            String filename4 = System.getProperty("user.dir") +"/Surefire_Reports.zip";
+
 
 
 //Create data source to attach the file in mail
@@ -94,6 +101,11 @@ public class TestReportSender {
             objMessageBodyPart3.setDataHandler(new DataHandler(source3));
             objMessageBodyPart3.setFileName(filename3);
             multipart.addBodyPart(objMessageBodyPart3);
+
+            /*DataSource source4 = new FileDataSource(filename3);
+            objMessageBodyPart4.setDataHandler(new DataHandler(source4));
+            objMessageBodyPart4.setFileName(filename4);
+            multipart.addBodyPart(objMessageBodyPart4);*/
 
 
 

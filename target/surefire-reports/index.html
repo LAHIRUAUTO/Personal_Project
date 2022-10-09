@@ -203,12 +203,12 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: chrome=105.0.5195.125)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;dell-inspiron-5559&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.3.0-59-generic&apos;, java.version: &apos;11.0.7&apos;
+System info: host: &apos;dell-inspiron-5559&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.3.0-59-generic&apos;, java.version: &apos;11.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b218c33a253c0ab4eb6a32c8c9c8a781, findElement {using=xpath, value=/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/*[name()=&apos;svg&apos;][1]
+Command: [f4c499f9aab4c837edc63ff002c258b4, findElement {using=xpath, value=/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/*[name()=&apos;svg&apos;][1]
 }]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /tmp/.com.google.Chrome.gmxQb5}, goog:chromeOptions: {debuggerAddress: localhost:33655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33655/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b218c33a253c0ab4eb6a32c8c9c8a781
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /tmp/.com.google.Chrome.F7atoo}, goog:chromeOptions: {debuggerAddress: localhost:33861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33861/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f4c499f9aab4c837edc63ff002c258b4
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -246,12 +246,31 @@ Session ID: b218c33a253c0ab4eb6a32c8c9c8a781
                   <a name="goToProgressBar">
                   </a> <!-- goToProgressBar -->
                   <span class="method-name">goToProgressBar</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&quot;startStopButton&quot;]
-&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at Utilities.Utils.explicitWaitElementClickable(Utils.java:62)
-	at Tools_QA_Page_Model.Wdget_Page.WidgetPageMethods.startAndStopProgressBar(WidgetPageMethods.java:221)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&quot;progress-bar bg-success&quot;]&quot;}
+  (Session info: chrome=105.0.5195.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;dell-inspiron-5559&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.3.0-59-generic&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4c499f9aab4c837edc63ff002c258b4, findElement {using=css selector, value=div[class=&quot;progress-bar bg-success&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /tmp/.com.google.Chrome.F7atoo}, goog:chromeOptions: {debuggerAddress: localhost:33861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33861/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f4c499f9aab4c837edc63ff002c258b4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at Tools_QA_Page_Model.Wdget_Page.WidgetPageMethods.startAndStopProgressBar(WidgetPageMethods.java:224)
 	at TestRunner.TestRunner.goToProgressBar(TestRunner.java:147)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -282,43 +301,6 @@ Session ID: b218c33a253c0ab4eb6a32c8c9c8a781
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;startStopButton&quot;]
-&quot;}
-  (Session info: chrome=105.0.5195.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;dell-inspiron-5559&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.3.0-59-generic&apos;, java.version: &apos;11.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b218c33a253c0ab4eb6a32c8c9c8a781, findElement {using=xpath, value=//*[@id=&quot;startStopButton&quot;]
-}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /tmp/.com.google.Chrome.gmxQb5}, goog:chromeOptions: {debuggerAddress: localhost:33655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33655/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b218c33a253c0ab4eb6a32c8c9c8a781
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 32 more
 
 </div> <!-- stack-trace -->
                   <em>
@@ -449,34 +431,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'goToProgressBar')
+data.setCell(0, 1, 'goToFramesAndWindowsScreen')
 data.setCell(0, 2, 'TestRunner.TestRunner')
-data.setCell(0, 3, 14456);
+data.setCell(0, 3, 14350);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'goToFramesAndWindowsScreen')
+data.setCell(1, 1, 'goToWdgetsScreen2')
 data.setCell(1, 2, 'TestRunner.TestRunner')
-data.setCell(1, 3, 14386);
+data.setCell(1, 3, 3017);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'goToWdgetsScreen2')
+data.setCell(2, 1, 'goToWdgetsScreen')
 data.setCell(2, 2, 'TestRunner.TestRunner')
-data.setCell(2, 3, 3107);
+data.setCell(2, 3, 2605);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'goToWdgetsScreen')
+data.setCell(3, 1, 'goToProgressBar')
 data.setCell(3, 2, 'TestRunner.TestRunner')
-data.setCell(3, 3, 2436);
+data.setCell(3, 3, 2382);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'goToSlider')
 data.setCell(4, 2, 'TestRunner.TestRunner')
-data.setCell(4, 3, 1225);
+data.setCell(4, 3, 1803);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'goToAccordian')
 data.setCell(5, 2, 'TestRunner.TestRunner')
-data.setCell(5, 3, 188);
+data.setCell(5, 3, 186);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Test_Suite">
               </div> <!-- times-div-Test_Suite -->
             </div> <!-- times-div -->
@@ -518,119 +500,119 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">validateTitle(https://demoqa.com/, chrome)</span>
-                <span class="method-start">8861 ms</span>
+                <span class="method-start">10214 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">validateCurrentURL(https://demoqa.com/, chrome)</span>
-                <span class="method-start">8874 ms</span>
+                <span class="method-start">10251 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">implicitwait</span>
-                <span class="method-start">8895 ms</span>
+                <span class="method-start">10369 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">testCasename</span>
-                <span class="method-start">8900 ms</span>
+                <span class="method-start">10386 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">threadSleep</span>
-                <span class="method-start">8900 ms</span>
+                <span class="method-start">10387 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">goToWdgetsScreen</span>
-                <span class="method-start">8903 ms</span>
+                <span class="method-start">10389 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">implicitwait</span>
-                <span class="method-start">11619 ms</span>
+                <span class="method-start">13395 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">testCasename</span>
-                <span class="method-start">11624 ms</span>
+                <span class="method-start">13403 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">threadSleep</span>
-                <span class="method-start">11624 ms</span>
+                <span class="method-start">13404 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">goToWdgetsScreen2</span>
-                <span class="method-start">11627 ms</span>
+                <span class="method-start">13407 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">implicitwait</span>
-                <span class="method-start">15036 ms</span>
+                <span class="method-start">16649 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">testCasename</span>
-                <span class="method-start">15037 ms</span>
+                <span class="method-start">16654 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">threadSleep</span>
-                <span class="method-start">15038 ms</span>
+                <span class="method-start">16654 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">goToAccordian</span>
-                <span class="method-start">15040 ms</span>
+                <span class="method-start">16656 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">implicitwait</span>
-                <span class="method-start">15517 ms</span>
+                <span class="method-start">17279 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">testCasename</span>
-                <span class="method-start">15524 ms</span>
+                <span class="method-start">17282 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">threadSleep</span>
-                <span class="method-start">15524 ms</span>
+                <span class="method-start">17282 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">goToSlider</span>
-                <span class="method-start">15527 ms</span>
+                <span class="method-start">17284 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">implicitwait</span>
-                <span class="method-start">16995 ms</span>
+                <span class="method-start">19445 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">testCasename</span>
-                <span class="method-start">16996 ms</span>
+                <span class="method-start">19447 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">threadSleep</span>
-                <span class="method-start">16997 ms</span>
+                <span class="method-start">19447 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">goToProgressBar</span>
-                <span class="method-start">16999 ms</span>
+                <span class="method-start">19449 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">implicitwait</span>
-                <span class="method-start">31709 ms</span>
+                <span class="method-start">22248 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">testCasename</span>
-                <span class="method-start">31711 ms</span>
+                <span class="method-start">22281 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">threadSleep</span>
-                <span class="method-start">31711 ms</span>
+                <span class="method-start">22281 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">goToFramesAndWindowsScreen</span>
-                <span class="method-start">31713 ms</span>
+                <span class="method-start">22283 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">46338 ms</span>
+                <span class="method-start">36975 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">endSuite(${branch}, Selenium Demo Test Result on , dcs.selenium.report@gmail.com, lmsbruovggrocqxk, vikasitha...)</span>
-                <span class="method-start">47025 ms</span>
+                <span class="method-start">37753 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
