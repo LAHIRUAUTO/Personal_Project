@@ -6,5 +6,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class FramesAndWindowsMethods extends FramesAndWindowsPageObjects{
 
+    public void clickOnbrowserWindowList1Locator () {
+        explicitWaitElementClickable(browserWindowList1Locator);
+        browserWindowList1Locator.click();
+    }
+
 
 }

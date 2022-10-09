@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd69a041-a04c-48ca-befc-28a93054ddbd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Console_Output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Execute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Execute.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extent_Reports/Test_Result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GetABTestingDescription.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToABTestingPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToAddRemoveElementPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToBasicLoginPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToCheckboxesPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToContextMenuPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/GoToDragAndDropPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/LogInToThePSSAdmin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/ReadTheBannerOnHomePage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToAccordian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToFramesAndWindowsScreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToProgressBar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToSlider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToToolTipsScreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToWdgetsScreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToWdgetsScreen2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/registerForBookStoreApplication.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Surefire_Reports.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogInToThePSSAdmin On chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogInToThePSSAdmin On edge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogInToThePSSAdmin On firefox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogOutFromThePSSAdmin On chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogOutFromThePSSAdmin On edge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Screen_Capture_Result/Success_Screen_Capture/LogOutFromThePSSAdmin On firefox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TestRunner.TestRunner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/Sub_Suite_2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Wdget_Page/WidgetPageMethods.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2FBJh3ZJ2vjseA8CJpAnshcFZ7E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;/home/user/Desktop/Udemy/Test&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Tools_QA_Page_Model.Home_Page" />
+      <recent name="PSSTestRunner" />
+      <recent name="Utilities" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="TestRunner" />
+      <recent name="Pages_Models.AddRemoveElementPage" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG./home/user/Desktop/Udemy/Personal_Project/Execute.xml">
+    <configuration name="TestRunner.GoToDragAndDropPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Personal_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.TestRunner" />
+      <option name="METHOD_NAME" value="GoToDragAndDropPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner.ReadTheBannerOnHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Personal_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunner.TestRunner" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.TestRunner" />
+      <option name="METHOD_NAME" value="ReadTheBannerOnHomePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner.goToProgressBar" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Personal_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.TestRunner" />
+      <option name="METHOD_NAME" value="goToProgressBar" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner.registerForBookStoreApplication" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Personal_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.TestRunner" />
+      <option name="METHOD_NAME" value="registerForBookStoreApplication" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/home/user/Desktop/Udemy/Personal_Project/Execute.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <output_file path="$PROJECT_DIR$/Console_Output.txt" is_save="true" />
+      <module name="Personal_Project" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Execute.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/home/user/Desktop/Udemy/Test/pss_admin_run.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <output_file path="$PROJECT_DIR$/Console_Output.txt" is_save="true" />
+      <module name="Test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/pss_admin_run.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/home/user/Desktop/Udemy/Test/pss_admin_run.xml" type="TestNG" temporary="true" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
+      <output_file path="$PROJECT_DIR$/Console_output.txt" is_save="true" />
+      <module name="Test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/pss_admin_run.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG./home/user/Desktop/Udemy/Test/pss_admin_run.xml" />
+      <item itemvalue="TestNG.TestRunner.goToProgressBar" />
+      <item itemvalue="TestNG.TestRunner.GoToDragAndDropPage" />
+      <item itemvalue="TestNG.TestRunner.registerForBookStoreApplication" />
+      <item itemvalue="TestNG.TestRunner.ReadTheBannerOnHomePage" />
+      <item itemvalue="TestNG./home/user/Desktop/Udemy/Personal_Project/Execute.xml" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./home/user/Desktop/Udemy/Personal_Project/Execute.xml" />
+        <item itemvalue="TestNG.TestRunner.goToProgressBar" />
+        <item itemvalue="TestNG.TestRunner.registerForBookStoreApplication" />
+        <item itemvalue="TestNG.TestRunner.GoToDragAndDropPage" />
+        <item itemvalue="TestNG.TestRunner.ReadTheBannerOnHomePage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd69a041-a04c-48ca-befc-28a93054ddbd" name="Default Changelist" comment="" />
+      <created>1663959659307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663959659307</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utilities/Utils.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Test$_home_user_Desktop_Udemy_Test_pss_admin_run_xml.ic" NAME="$PROJECT_DIR$/pss_admin_run.xml Coverage Results" MODIFIED="1664052594354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
