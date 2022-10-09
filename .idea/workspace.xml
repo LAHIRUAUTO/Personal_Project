@@ -30,13 +30,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd69a041-a04c-48ca-befc-28a93054ddbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/chromedriver_linux64/chromedriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/edgedriver_linux64/Driver_Notes/EULA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/edgedriver_linux64/Driver_Notes/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/edgedriver_linux64/Driver_Notes/credits.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/edgedriver_linux64/msedgedriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/geckodriver-v0.31.0-linux64/geckodriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Test-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
