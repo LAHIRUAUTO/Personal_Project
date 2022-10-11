@@ -64,6 +64,21 @@ public class Utils extends Browser_Base{
         explicitwait.until(ExpectedConditions.alertIsPresent());
     }
 
+    //Switching to Frames by ID
+    public void switchToFramesByID (String id) {
+        driver.switchTo().frame(id);
+    }
+
+    //Switching to Frames by Element
+    public void switchToFramesByElement (WebElement element) {
+        driver.switchTo().frame(element);
+    }
+
+    //Switching to Default content
+    public void switchToDefaultFrame () {
+        driver.switchTo().defaultContent();
+    }
+
 
 
     //Fluent Wait ElementVisible

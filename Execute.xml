@@ -14,8 +14,8 @@
     <parameter name="tester" value="Got it"/>
     <parameter name="TestReportSenderMailAddress" value="dcs.selenium.report@gmail.com"/>
     <parameter name="TestReportSenderMailPassword" value="lmsbruovggrocqxk"/>
-    <parameter name="TestReportReceiverMailAddress" value="${reportReceiverMail}"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
-    <parameter name="browser" value="${browserName}"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
+    <parameter name="TestReportReceiverMailAddress" value="vikasithasouth@gmail.com"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
+    <parameter name="browser" value="chrome"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
 
 
     <test verbose="2" preserve-order="true" name="Sub_Suite_2">
@@ -36,10 +36,18 @@
                     <exclude name="goToNewTab"/>
                     <exclude name="goToNewWindow"/>
                     <exclude name="goToNewMessageWindow"/>
-                    <include name="goToalert1"/>
-                    <include name="goToalert2"/>
-                    <include name="goToalert3"/>
-                    <include name="goToalert4"/>
+                    <exclude name="goToalert1"/>
+                    <exclude name="goToalert2"/>
+                    <exclude name="goToalert3"/>
+                    <exclude name="goToalert4"/>
+                    <exclude name="goToNewFrameWindow"/>
+                    <exclude name="goToNewNestedFrameWindow"/>
+                    <exclude name="goToModalDialogsWindow"/>
+                    <include name="goToInteractionsWindow"/>
+
+
+
+
 
 
 

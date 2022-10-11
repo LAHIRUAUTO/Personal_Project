@@ -26,10 +26,6 @@ public class HomePageObjects extends Utils {
     @CacheLookup
     WebElement WidgetsDroDownLocator;
 
-    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div[5]\n")
-    @CacheLookup
-    WebElement InteractionsDroDownLocator;
-
     @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div[6]\n")
     @CacheLookup
     WebElement BookStoreApplicationLocator;
@@ -46,6 +42,9 @@ public class HomePageObjects extends Utils {
     @CacheLookup
     WebElement FramewsAndWindowsLocator;
 
+    @FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[2]/*[name()='svg'][1]/*[name()='path'][1]")
+    @CacheLookup
+    WebElement InteractionsLocator;
 
 
 

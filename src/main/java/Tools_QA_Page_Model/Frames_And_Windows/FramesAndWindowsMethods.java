@@ -144,6 +144,71 @@ public class FramesAndWindowsMethods extends FramesAndWindowsPageObjects{
 
     }
 
+    public void clickOnFrameList1Locator ()  {
+        explicitWaitElementClickable(framesList1Locator);
+        framesList1Locator.click();
+
+    }
+
+
+    public void getFrame1Text ()  {
+        System.out.println(textInFrame1Locator.getText());
+
+    }
+
+    public void swithcToDefaultContent ()  {
+        driver.switchTo().defaultContent();
+    }
+
+
+    public void getFrame2Text ()  {
+        System.out.println(textInFrame2Locator.getText());
+
+    }
+
+    public void clickOnNestedFrameList1Locator ()  {
+        explicitWaitElementClickable(nestedFramesList1Locator);
+        nestedFramesList1Locator.click();
+
+    }
+
+
+    public void getPerantFrameText ()  {
+        System.out.println(textInPerantFrame.getText());
+
+    }
+
+    public void getChildFrameText ()  {
+        System.out.println(textInChildFrame.getText());
+
+    }
+
+    public void clickModalDialogsList1Locator ()  {
+        explicitWaitElementClickable(modalDialogsList1Locator);
+        modalDialogsList1Locator.click();
+
+    }
+
+    public void clickSmallModalDialogButtonLocator ()  {
+        explicitWaitElementClickable(smallModalDialogButtonLocator);
+        smallModalDialogButtonLocator.click();
+
+    }
+
+    public void getSmallModalDialogContent ()  {
+        explicitWaitElementClickable(smallModalDialogContentLocator);
+        System.out.println(smallModalDialogContentLocator.getText());
+
+    }
+
+    public void clickSmallModalDialogCloseButtonLocator ()  {
+        explicitWaitElementClickable(smallModalDialogCloseButtonLocator);
+        smallModalDialogCloseButtonLocator.click();
+
+    }
+
+
+
 
 
 

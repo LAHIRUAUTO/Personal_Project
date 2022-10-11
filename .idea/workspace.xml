@@ -30,36 +30,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd69a041-a04c-48ca-befc-28a93054ddbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Screen_Capture_Result/goToNewMessageWindow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screen_Capture_Result/goToNewWindow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screen_Capture_Result/goToalert1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screen_Capture_Result/goToalert2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screen_Capture_Result/goToalert3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screen_Capture_Result/goToalert4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Interactions/InteractionPageMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Interactions/InteractionPageObjects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Console_Output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Console_Output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Execute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Execute.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Extent_Reports/Test_Result.html" beforeDir="false" afterPath="$PROJECT_DIR$/Extent_Reports/Test_Result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToFramesAndWindowsScreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screen_Capture_Result/goToFramesAndWindowsScreen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Browser_Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Browser_Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Home_Page/HomePageMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Home_Page/HomePageMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Home_Page/HomePageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Home_Page/HomePageObjects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Browser_Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Browser_Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TestRunner.TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TestRunner.TestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -52,6 +52,57 @@ public class FramesAndWindowsPageObjects extends Utils {
     @CacheLookup
     WebElement alertButtonLocator4;
 
+    @FindBy (xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[3]/span[1]")
+    @CacheLookup
+    WebElement  framesList1Locator;
+
+    @FindBy (xpath = "/html[1]/body[1]/h1[1]")
+    @CacheLookup
+    WebElement  textInFrame1Locator;
+
+    @FindBy (xpath = "/html[1]/body[1]/h1[1]")
+    @CacheLookup
+    WebElement  textInFrame2Locator;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[4]/span[1]")
+    @CacheLookup
+    WebElement  nestedFramesList1Locator;
+
+    @FindBy (xpath = "/html[1]/body[1]")
+    @CacheLookup
+    WebElement  textInPerantFrame;
+
+
+    @FindBy (xpath = "/html[1]/body[1]/p[1]")
+    @CacheLookup
+    WebElement  textInChildFrame;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[5]/span[1]")
+    @CacheLookup
+    WebElement  modalDialogsList1Locator;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/button[1]")
+    @CacheLookup
+    WebElement  smallModalDialogButtonLocator;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/button[2]")
+    @CacheLookup
+    WebElement  largeModalDialogButtonLocator;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]")
+    @CacheLookup
+    WebElement  smallModalDialogContentLocator;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[3]/button[1]")
+    @CacheLookup
+    WebElement  smallModalDialogCloseButtonLocator;
+
+
+
+
+
+
+
 
 
 }
