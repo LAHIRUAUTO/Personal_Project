@@ -3,6 +3,7 @@ package TestRunner;
 
 
 import Tools_QA_Page_Model.Book_Store_Register_Page.BSRegisterPageMethods;
+import Tools_QA_Page_Model.Frames_And_Windows.FramesAndWindowsMethods;
 import Tools_QA_Page_Model.Home_Page.HomePageMethods;
 import Tools_QA_Page_Model.Wdget_Page.WidgetPageMethods;
 import Utilities.Utils;
@@ -164,15 +165,91 @@ public class TestRunner extends Utils {
     }
 
     @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
-    public void goToFramesAndWindowsScreen () throws InterruptedException {
+    public void goToNewTab () throws InterruptedException {
         //String tooltipTextValue = DataSeetSh.getCell("C5").getContents();
 
 
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        FramesAndWindowsMethods newframesandwindowspage = PageFactory.initElements(driver, FramesAndWindowsMethods.class);
         newhomepage.clickFramewsAndWindowsLocator();
+        newframesandwindowspage.clickOnbrowserWindowList1Locator();
+        newframesandwindowspage.clicknewTabButtonLocator();
 
 
     }
+
+    @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    public void goToNewWindow () throws InterruptedException {
+
+
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        FramesAndWindowsMethods newframesandwindowspage = PageFactory.initElements(driver, FramesAndWindowsMethods.class);
+        newhomepage.clickFramewsAndWindowsLocator();
+        newframesandwindowspage.clickOnbrowserWindowList1Locator();
+        newframesandwindowspage.clicknewWindowButtonLocator();
+
+
+    }
+
+    @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    public void goToNewMessageWindow () throws InterruptedException {
+
+
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        FramesAndWindowsMethods newframesandwindowspage = PageFactory.initElements(driver, FramesAndWindowsMethods.class);
+        newhomepage.clickFramewsAndWindowsLocator();
+        newframesandwindowspage.clickOnbrowserWindowList1Locator();
+        newframesandwindowspage.clickNewMessageWindowButtonLocator();
+
+
+    }
+
+    @Test (groups = { "alert" })
+    public void goToalert1 () throws InterruptedException {
+
+
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        FramesAndWindowsMethods newframesandwindowspage = PageFactory.initElements(driver, FramesAndWindowsMethods.class);
+        newhomepage.clickFramewsAndWindowsLocator();
+        newframesandwindowspage.clickOnAlertList1Locator();
+        newframesandwindowspage.clickalertButtonLocator1();
+
+
+    }
+
+    @Test (groups = { "alert" })
+    public void goToalert2 () {
+
+
+        FramesAndWindowsMethods newframesandwindowspage = PageFactory.initElements(driver, FramesAndWindowsMethods.class);
+        newframesandwindowspage.clickOnAlertList1Locator();
+        newframesandwindowspage.clickalertButtonLocator2();
+
+
+    }
+
+    @Test (groups = { "alert" })
+    public void goToalert3 () {
+
+
+        FramesAndWindowsMethods newframesandwindowspage = PageFactory.initElements(driver, FramesAndWindowsMethods.class);
+        newframesandwindowspage.clickOnAlertList1Locator();
+        newframesandwindowspage.clickalertButtonLocator3();
+
+
+    }
+
+    @Test (groups = { "alert" })
+    public void goToalert4 () {
+
+
+        FramesAndWindowsMethods newframesandwindowspage = PageFactory.initElements(driver, FramesAndWindowsMethods.class);
+        newframesandwindowspage.clickOnAlertList1Locator();
+        newframesandwindowspage.clickalertButtonLocator4();
+
+
+    }
+
 
 
 }

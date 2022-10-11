@@ -35,10 +35,6 @@ public class Utils extends Browser_Base{
     }
     //Implicit Wait end
 
-    @BeforeMethod
-    public static void testCasename () {
-
-    }
 
     //Assert Title of the web page
     @Parameters({"url", "browser"})
@@ -61,6 +57,14 @@ public class Utils extends Browser_Base{
         WebDriverWait explicitwait = new WebDriverWait(driver, Duration.ofSeconds(10));
         explicitwait.until(ExpectedConditions.elementToBeClickable(element));
     }
+
+    //Ecplicit Wait for Alert Present
+    public void explicitWaitAlertPresent() {
+        WebDriverWait explicitwait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        explicitwait.until(ExpectedConditions.alertIsPresent());
+    }
+
+
 
     //Fluent Wait ElementVisible
     public void fluentWaitElementVisible(WebElement element) {

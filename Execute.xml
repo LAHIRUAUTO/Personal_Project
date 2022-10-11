@@ -20,6 +20,8 @@
 
     <test verbose="2" preserve-order="true" name="Sub_Suite_2">
 
+
+
         <classes>
             <class name="TestRunner.TestRunner">
                 <methods>
@@ -31,11 +33,28 @@
                     <exclude name="goToSlider"/>
                     <exclude name="goToProgressBar"/>
                     <exclude name="goToToolTipsScreen"/>
-                    <include name="goToFramesAndWindowsScreen"/>
+                    <exclude name="goToNewTab"/>
+                    <exclude name="goToNewWindow"/>
+                    <exclude name="goToNewMessageWindow"/>
+                    <include name="goToalert1"/>
+                    <include name="goToalert2"/>
+                    <include name="goToalert3"/>
+                    <include name="goToalert4"/>
+
+
+
+
+
+
+
+
 
                 </methods>
+
             </class>
+
         </classes>
+
 
     </test>
     <!--<test verbose="2" preserve-order="true" name="Sub_Suite_2">
