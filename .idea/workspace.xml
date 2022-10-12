@@ -30,32 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd69a041-a04c-48ca-befc-28a93054ddbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Console_Output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Console_Output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Execute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Execute.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extent_Reports/Test_Result.html" beforeDir="false" afterPath="$PROJECT_DIR$/Extent_Reports/Test_Result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToInteractionsWindow.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screen_Capture_Result/goToInteractionsWindow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Browser_Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Browser_Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Interactions/InteractionPageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Interactions/InteractionPageObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Browser_Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Browser_Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TestRunner.TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TestRunner.TestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
