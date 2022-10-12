@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="PSSAdmin_Regression_Test" />
         <module name="Selenium_Grid_Demo" />
         <module name="Personal_Project" />
-        <module name="PSSAdmin_Regression_Test" />
+        <module name="Selenium_Grid_Project" />
       </profile>
     </annotationProcessing>
   </component>
