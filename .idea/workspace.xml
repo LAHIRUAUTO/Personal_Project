@@ -30,22 +30,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd69a041-a04c-48ca-befc-28a93054ddbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Interactions/InteractionPageMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Interactions/InteractionPageObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Console_Output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Console_Output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Execute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Execute.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Extent_Reports/Test_Result.html" beforeDir="false" afterPath="$PROJECT_DIR$/Extent_Reports/Test_Result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Home_Page/HomePageMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Home_Page/HomePageMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Home_Page/HomePageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Home_Page/HomePageObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToInteractionsWindow.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screen_Capture_Result/goToInteractionsWindow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Browser_Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Browser_Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Interactions/InteractionPageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Interactions/InteractionPageObjects.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Browser_Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Browser_Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TestRunner.TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TestRunner.TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-not-run.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,12 +95,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;/home/user/Desktop/Udemy/Test&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/home/user/Desktop/Udemy/Personal_Project",
+    "settings.editor.selected.configurable": "preferences.general"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Tools_QA_Page_Model.Home_Page" />
@@ -102,7 +112,7 @@
       <recent name="Pages_Models.AddRemoveElementPage" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./home/user/Desktop/Udemy/Personal_Project/Execute.xml">
+  <component name="RunManager" selected="TestNG./home/user/Desktop/Udemy/Selenium_Grid_Demo/Execute.xml">
     <configuration name="TestRunner.GoToDragAndDropPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Personal_Project" />
       <extension name="coverage">
@@ -114,24 +124,6 @@
       <option name="PACKAGE_NAME" value="TestRunner" />
       <option name="MAIN_CLASS_NAME" value="TestRunner.TestRunner" />
       <option name="METHOD_NAME" value="GoToDragAndDropPage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRunner.ReadTheBannerOnHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Personal_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TestRunner.TestRunner" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TestRunner" />
-      <option name="MAIN_CLASS_NAME" value="TestRunner.TestRunner" />
-      <option name="METHOD_NAME" value="ReadTheBannerOnHomePage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -195,20 +187,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/home/user/Desktop/Udemy/Test/pss_admin_run.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <output_file path="$PROJECT_DIR$/Console_Output.txt" is_save="true" />
-      <module name="Test" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/pss_admin_run.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
+    <configuration name="/home/user/Desktop/Udemy/Selenium_Grid_Demo/Execute.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_Grid_Demo" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Execute.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -237,19 +219,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG./home/user/Desktop/Udemy/Test/pss_admin_run.xml" />
+      <item itemvalue="TestNG./home/user/Desktop/Udemy/Selenium_Grid_Demo/Execute.xml" />
       <item itemvalue="TestNG.TestRunner.goToProgressBar" />
       <item itemvalue="TestNG.TestRunner.GoToDragAndDropPage" />
       <item itemvalue="TestNG.TestRunner.registerForBookStoreApplication" />
-      <item itemvalue="TestNG.TestRunner.ReadTheBannerOnHomePage" />
       <item itemvalue="TestNG./home/user/Desktop/Udemy/Personal_Project/Execute.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./home/user/Desktop/Udemy/Selenium_Grid_Demo/Execute.xml" />
         <item itemvalue="TestNG./home/user/Desktop/Udemy/Personal_Project/Execute.xml" />
         <item itemvalue="TestNG.TestRunner.goToProgressBar" />
         <item itemvalue="TestNG.TestRunner.registerForBookStoreApplication" />
         <item itemvalue="TestNG.TestRunner.GoToDragAndDropPage" />
-        <item itemvalue="TestNG.TestRunner.ReadTheBannerOnHomePage" />
       </list>
     </recent_temporary>
   </component>

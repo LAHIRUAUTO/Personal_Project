@@ -1,10 +1,12 @@
 Utilities/Listener.class
 Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.class
+Tools_QA_Page_Model/Interactions/InteractionPageObjects.class
 Utilities/Browser_Base.class
 Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsPageObjects.class
 Tools_QA_Page_Model/Home_Page/HomePageMethods.class
 Utilities/Utils.class
 Tools_QA_Page_Model/Wdget_Page/WidgetPageObjects.class
+Tools_QA_Page_Model/Interactions/InteractionPageMethods.class
 Tools_QA_Page_Model/Book_Store_Register_Page/BSRegisterPageObjects.class
 Utilities/ZipUtils.class
 Tools_QA_Page_Model/Wdget_Page/WidgetPageMethods.class

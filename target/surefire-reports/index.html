@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Suite" title="TestRunner.TestRunner" class="method navigator-link" hash-for-method="goToFramesAndWindowsScreen">goToFramesAndWindowsScreen</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Suite" title="TestRunner.TestRunner" class="method navigator-link" hash-for-method="goToInteractionsWindow">goToInteractionsWindow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="goToFramesAndWindowsScreen">
-                  </a> <!-- goToFramesAndWindowsScreen -->
-                  <span class="method-name">goToFramesAndWindowsScreen</span>
+                  <a name="goToInteractionsWindow">
+                  </a> <!-- goToInteractionsWindow -->
+                  <span class="method-name">goToInteractionsWindow</span>
                   <em>
 (Register for the book store)                  </em>
                 </div> <!-- method-content -->
@@ -144,7 +144,7 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; name=&quot;Test_Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;parameter name=&quot;Branch&quot; value=&quot;origin/master&quot;/&gt;
+  &lt;parameter name=&quot;Branch&quot; value=&quot;${branch}&quot;/&gt;
   &lt;parameter name=&quot;TestReportReceiverMailAddress&quot; value=&quot;vikasithasouth@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;tester&quot; value=&quot;Got it&quot;/&gt;
@@ -160,7 +160,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;TestRunner.TestRunner&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;goToFramesAndWindowsScreen&quot;/&gt;
+          &lt;include name=&quot;goToInteractionsWindow&quot;/&gt;
           &lt;exclude name=&quot;validateCurrentURL&quot;/&gt;
           &lt;exclude name=&quot;registerForBookStoreApplication&quot;/&gt;
           &lt;exclude name=&quot;goToWdgetsScreen&quot;/&gt;
@@ -169,6 +169,16 @@
           &lt;exclude name=&quot;goToSlider&quot;/&gt;
           &lt;exclude name=&quot;goToProgressBar&quot;/&gt;
           &lt;exclude name=&quot;goToToolTipsScreen&quot;/&gt;
+          &lt;exclude name=&quot;goToNewTab&quot;/&gt;
+          &lt;exclude name=&quot;goToNewWindow&quot;/&gt;
+          &lt;exclude name=&quot;goToNewMessageWindow&quot;/&gt;
+          &lt;exclude name=&quot;goToalert1&quot;/&gt;
+          &lt;exclude name=&quot;goToalert2&quot;/&gt;
+          &lt;exclude name=&quot;goToalert3&quot;/&gt;
+          &lt;exclude name=&quot;goToalert4&quot;/&gt;
+          &lt;exclude name=&quot;goToNewFrameWindow&quot;/&gt;
+          &lt;exclude name=&quot;goToNewNestedFrameWindow&quot;/&gt;
+          &lt;exclude name=&quot;goToModalDialogsWindow&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestRunner.TestRunner --&gt;
     &lt;/classes&gt;
@@ -212,9 +222,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'goToFramesAndWindowsScreen')
+data.setCell(0, 1, 'goToInteractionsWindow')
 data.setCell(0, 2, 'TestRunner.TestRunner')
-data.setCell(0, 3, 2580);
+data.setCell(0, 3, 2685);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
@@ -234,19 +244,39 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">7 ignored methods</span>
+            <span class="header-content">17 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestRunner.TestRunner</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">goToWdgetsScreen</span>
+                <span class="ignored-method-name">goToalert4</span>
+                <br/>
+                <span class="ignored-method-name">goToalert1</span>
+                <br/>
+                <span class="ignored-method-name">goToNewWindow</span>
+                <br/>
+                <span class="ignored-method-name">goToalert3</span>
                 <br/>
                 <span class="ignored-method-name">goToAccordian</span>
+                <br/>
+                <span class="ignored-method-name">goToModalDialogsWindow</span>
                 <br/>
                 <span class="ignored-method-name">goToToolTipsScreen</span>
                 <br/>
                 <span class="ignored-method-name">goToWdgetsScreen2</span>
+                <br/>
+                <span class="ignored-method-name">goToNewFrameWindow</span>
+                <br/>
+                <span class="ignored-method-name">goToalert2</span>
+                <br/>
+                <span class="ignored-method-name">goToNewMessageWindow</span>
+                <br/>
+                <span class="ignored-method-name">goToWdgetsScreen</span>
+                <br/>
+                <span class="ignored-method-name">goToNewTab</span>
+                <br/>
+                <span class="ignored-method-name">goToNewNestedFrameWindow</span>
                 <br/>
                 <span class="ignored-method-name">goToProgressBar</span>
                 <br/>
@@ -271,35 +301,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">validateTitle(https://demoqa.com/, chrome)</span>
-                <span class="method-start">36153 ms</span>
+                <span class="method-start">13428 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">validateCurrentURL(https://demoqa.com/, chrome)</span>
-                <span class="method-start">36211 ms</span>
+                <span class="method-start">13438 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">implicitwait</span>
-                <span class="method-start">36692 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">testCasename</span>
-                <span class="method-start">36719 ms</span>
+                <span class="method-start">13457 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">threadSleep</span>
-                <span class="method-start">36719 ms</span>
+                <span class="method-start">13463 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">goToFramesAndWindowsScreen</span>
-                <span class="method-start">36733 ms</span>
+                <span class="method-name">goToInteractionsWindow</span>
+                <span class="method-start">13465 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">40370 ms</span>
+                <span class="method-start">17731 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
-                <span class="method-name">endSuite(origin/master, Selenium Demo Test Result on , dcs.selenium.report@gmail.com, lmsbruovggrocqxk, vikas...)</span>
-                <span class="method-start">41106 ms</span>
+                <span class="method-name">endSuite(${branch}, Selenium Demo Test Result on , dcs.selenium.report@gmail.com, lmsbruovggrocqxk, vikasitha...)</span>
+                <span class="method-start">18383 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
