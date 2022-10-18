@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test_Suite" thread-count="1" parallel="methods">
+<suite name="Test_Suite" thread-count="1" parallel="false" >
 
     <listeners>
         <listener class-name="Utilities.Listener"/>
@@ -14,12 +14,12 @@
     <parameter name="tester" value="Got it"/>
     <parameter name="TestReportSenderMailAddress" value="dcs.selenium.report@gmail.com"/>
     <parameter name="TestReportSenderMailPassword" value="lmsbruovggrocqxk"/>
-    <parameter name="TestReportReceiverMailAddress" value="vikasithasouth@gmail.com"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
-    <parameter name="browser" value="chrome"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
+    <parameter name="TestReportReceiverMailAddress" value="${reportReceiverMail}"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
+    <parameter name="browser" value="${browserName}"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
     <parameter name="platform" value="UNIX"/>
 
 
-    <test verbose="2" preserve-order="true" name="Sub_Suite_2">
+    <test verbose="2" preserve-order="true" name="Sub_Suite_2" >
 
 
 
@@ -44,7 +44,10 @@
                     <exclude name="goToNewFrameWindow"/>
                     <exclude name="goToNewNestedFrameWindow"/>
                     <exclude name="goToModalDialogsWindow"/>
-                    <include name="goToInteractionsWindow"/>
+                    <exclude name="goToInteractionsWindow"/>
+                    <include name="goToElementsWindow"/>
+
+
 
 
 

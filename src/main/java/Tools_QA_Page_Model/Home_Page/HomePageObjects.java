@@ -46,6 +46,12 @@ public class HomePageObjects extends Utils {
     @CacheLookup
     WebElement InteractionsLocator;
 
+    @FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]")
+    @CacheLookup
+    WebElement ElementsLocator;
+
+
+
 
 
 }

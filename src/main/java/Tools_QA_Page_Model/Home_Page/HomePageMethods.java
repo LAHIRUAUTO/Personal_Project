@@ -30,4 +30,11 @@ public class HomePageMethods extends HomePageObjects {
         explicitWaitElementClickable(InteractionsLocator);
         InteractionsLocator.click();
     }
+
+    public void clickElementsLocator () {
+        explicitWaitElementClickable(ElementsLocator);
+        ElementsLocator.click();
+    }
+
+
 }

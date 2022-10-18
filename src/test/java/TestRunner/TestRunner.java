@@ -1,8 +1,8 @@
 package TestRunner;
 
 
-
 import Tools_QA_Page_Model.Book_Store_Register_Page.BSRegisterPageMethods;
+import Tools_QA_Page_Model.Elements.ElementsPageMethods;
 import Tools_QA_Page_Model.Frames_And_Windows.FramesAndWindowsMethods;
 import Tools_QA_Page_Model.Home_Page.HomePageMethods;
 import Tools_QA_Page_Model.Interactions.InteractionPageMethods;
@@ -13,12 +13,13 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import java.awt.*;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -305,7 +306,7 @@ public class TestRunner extends Utils {
 
     }
 
-    @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store")
+    @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store", invocationCount = 1, timeOut = 10000)
     public void goToInteractionsWindow ()  {
 
 
@@ -314,6 +315,33 @@ public class TestRunner extends Utils {
         newhomepage.clickInteractionsLocator();
         newinteractionspage.clicksortableButtonLocator();
         newinteractionspage.clickSortableGridViewButtonLocator();
+        //driver.navigate().back();
+        //driver.navigate().back();
+        //driver.switchTo().newWindow(WindowType.WINDOW);
+        driver.get("https://demoqa.com/");
+
+
+
+
+
+
+    }
+
+    @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store", invocationCount = 1, timeOut = 10000)
+    public void goToElementsWindow ()  {
+
+
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        ElementsPageMethods newelementspage = PageFactory.initElements(driver, ElementsPageMethods.class);
+        newhomepage.clickElementsLocator();
+        scrollDown();
+        newelementspage.clickdynamicPropertiesLocator();
+        newelementspage.clickFiveSecondsButton();
+        newelementspage.clickAfterFiveSecondsButton();
+
+
+
+
 
 
 
