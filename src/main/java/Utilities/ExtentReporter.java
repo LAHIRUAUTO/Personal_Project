@@ -13,8 +13,7 @@ import static Utilities.Listener.extent;
 
 public class ExtentReporter extends Browser_Base{
 
-    @Parameters({"tester"})
-    public static ExtentReports getReportObj(String tester) {
+    public static ExtentReports getReportObj() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy MM dd HH:mm/");
         LocalDateTime now = LocalDateTime.now();
         System.out.println(dtf.format(now) + ": Test suite started ");
@@ -27,7 +26,6 @@ public class ExtentReporter extends Browser_Base{
 
         ExtentReports extent = new ExtentReports();
         extent.attachReporter(reporter);
-        extent.setSystemInfo("Tester : ", tester);
         extent.getStats();
         return extent;
 

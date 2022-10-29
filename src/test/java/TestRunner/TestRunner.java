@@ -7,15 +7,16 @@ import Tools_QA_Page_Model.Frames_And_Windows.FramesAndWindowsMethods;
 import Tools_QA_Page_Model.Home_Page.HomePageMethods;
 import Tools_QA_Page_Model.Interactions.InteractionPageMethods;
 import Tools_QA_Page_Model.Wdget_Page.WidgetPageMethods;
+import Utilities.TestNGDataProvider;
 import Utilities.Utils;
 import com.sun.net.httpserver.Authenticator;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WindowType;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
+import org.sikuli.script.FindFailed;
+import org.testng.SkipException;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -306,7 +307,7 @@ public class TestRunner extends Utils {
 
     }
 
-    @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store", invocationCount = 1, timeOut = 10000)
+    @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, enabled = false , description = "Register for the book store", invocationCount = 1, timeOut = 10000)
     public void goToInteractionsWindow ()  {
 
 
@@ -327,10 +328,8 @@ public class TestRunner extends Utils {
 
     }
 
-    @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store", invocationCount = 1, timeOut = 10000)
+    @Test (  priority = 1, retryAnalyzer = Authenticator.Retry.class, description = "Register for the book store", invocationCount = 1, timeOut = 10000, expectedExceptions = ElementClickInterceptedException.class)
     public void goToElementsWindow ()  {
-
-
         HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
         ElementsPageMethods newelementspage = PageFactory.initElements(driver, ElementsPageMethods.class);
         newhomepage.clickElementsLocator();
@@ -338,14 +337,31 @@ public class TestRunner extends Utils {
         newelementspage.clickdynamicPropertiesLocator();
         newelementspage.clickFiveSecondsButton();
         newelementspage.clickAfterFiveSecondsButton();
+        //throw new SkipException("Skipping this exception");
+        driver.get("https://demoqa.com/");
+    }
 
+    @Test (expectedExceptions = StaleElementReferenceException.class)
+    public void goToElementsWindow_AccessLinks ()  {
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        ElementsPageMethods newelementspage = PageFactory.initElements(driver, ElementsPageMethods.class);
+        newhomepage.clickElementsLocator();
+        scrollDown();
+        newelementspage.clickLinksLocator();
+        newelementspage.getAllLinks();
+        driver.get("https://demoqa.com/");
+    }
 
+    @Test (dataProvider="SearchProvider",dataProviderClass= TestNGDataProvider.class)
+    public void goToElementsWindow_FileUpload (String textToBeInserted) throws FindFailed {
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        ElementsPageMethods newelementspage = PageFactory.initElements(driver, ElementsPageMethods.class);
+        newhomepage.clickElementsLocator();
+        scrollDown();
+        newelementspage.clickUploadAndDownloadLocator();
+        newelementspage.clickChooseFileLocator(textToBeInserted);
 
-
-
-
-
-
+        //driver.get("https://demoqa.com/");
     }
 
 

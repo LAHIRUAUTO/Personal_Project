@@ -23,16 +23,10 @@ public class Browser_Base {
 
 
     @Parameters({"browser", "url"})
-    @BeforeTest
+    @BeforeSuite
     public static void Intialize(String browser, String url) throws Exception {
 
-
-
-
-        //Load Property File
-        FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")+"/App.properties");
-        Properties obj = new Properties();
-        obj.load(objfile);
+        // End loading app proerty file
 
         switch (browser) {
             case "chrome" :
@@ -57,8 +51,8 @@ public class Browser_Base {
                 driver = new ChromeDriver(option);
 
             case "CDTchrome" :
-                /*WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();*/
+                //WebDriverManager.chromedriver().setup();
+                //driver = new ChromeDriver();
                 //System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir")+"/Drivers/chromedriver_linux64/chromedriver"));
                 //driver = new ChromeDriver();
                 //DevTools devTools = driver.getDevTools();

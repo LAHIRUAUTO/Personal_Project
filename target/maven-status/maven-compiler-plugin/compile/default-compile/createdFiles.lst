@@ -1,4 +1,7 @@
+Tools_QA_Page_Model/Elements/ElementsPageMethods.class
+Tools_QA_Page_Model/Elements/ElementsPageObjects.class
 Utilities/Listener.class
+Utilities/TestNGDataProvider.class
 Tools_QA_Page_Model/Frames_And_Windows/FramesAndWindowsMethods.class
 Tools_QA_Page_Model/Interactions/InteractionPageObjects.class
 Utilities/Browser_Base.class

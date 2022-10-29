@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test_Suite" thread-count="1" parallel="false" >
+
+    <listeners>
+        <listener class-name="Utilities.Listener"/>
+    </listeners>
+
+    <!--Globle Parameters for All Browsers -->
+    <parameter name="Branch" value="${branch}"/><!--PSS_Release_21.2 Patch-47-->
+    <parameter name="Module" value="Selenium Demo Test Result on "/>
+    <parameter name="url" value="https://demoqa.com/"/>
+    <parameter name="title" value="ToolsQA"/>
+    <parameter name="tester" value="Got it"/>
+    <parameter name="TestReportSenderMailAddress" value="dcs.selenium.report@gmail.com"/>
+    <parameter name="TestReportSenderMailPassword" value="lmsbruovggrocqxk"/>
+    <parameter name="TestReportReceiverMailAddress" value="vikasithasouth@gmail.com"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
+    <parameter name="browser" value="chrome"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
+    <parameter name="platform" value="UNIX"/>
+
+
+
+    <test name="Regression_1">
+
+        <classes>
+            <class name="TestRunner2.TestRunner2"/>
+        </classes>
+    </test>
+
+    <!--<test name="Regression_2">
+
+        <classes>
+            <class name="TestRunner3.TestRunner3"/>
+        </classes>
+    </test>-->
+
+
+</suite>

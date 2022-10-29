@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
 
 import java.io.*;
 import java.time.Duration;
@@ -42,14 +43,19 @@ public class Utils extends Browser_Base{
     public void validateTitle (String url, String browser){
         String currentTitle = driver.getTitle();
         String expectedTitle = "ToolsQA";
-        Assert.assertEquals(currentTitle, expectedTitle, "Incorrect Title Displayed on " + browser);
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(currentTitle, expectedTitle, "Assert 1 Incorrect Title Displayed on " + browser);
+        Assert.assertTrue(expectedTitle.equalsIgnoreCase(currentTitle) , "Assert 2 Incorrect Title Displayed on " + browser);
+        System.out.println("Run Before Test");
+        softAssert.assertAll();
+
     }
     //End Assert title of the web page
 
     //Explicit Wait ElementVisible
     public void explicitWaitElementVisible(WebElement element) {
         WebDriverWait explicitwait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        explicitwait.until(ExpectedConditions.visibilityOfAllElements(element ));
+        explicitwait.until(ExpectedConditions.visibilityOf(element));
     }
 
     //Explicit Wait ElementClickable
@@ -160,6 +166,8 @@ public class Utils extends Browser_Base{
 
 
 
+
+
     /*//Capture Screen Shots start
         @Parameters({ "browser"})
         @AfterMethod
@@ -225,6 +233,7 @@ public class Utils extends Browser_Base{
         }
     }
     //Capture Screen Shots ends*/
+
 
 
     @Parameters ({"Branch", "Module", "TestReportSenderMailAddress", "TestReportSenderMailPassword", "TestReportReceiverMailAddress"})

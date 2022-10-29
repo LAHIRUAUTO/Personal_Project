@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Suite" title="TestRunner.TestRunner" class="method navigator-link" hash-for-method="goToInteractionsWindow">goToInteractionsWindow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Suite" title="TestRunner.TestRunner" class="method navigator-link" hash-for-method="goToElementsWindow_FileUpload">goToElementsWindow_FileUpload</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_Suite -->
@@ -125,11 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="goToInteractionsWindow">
-                  </a> <!-- goToInteractionsWindow -->
-                  <span class="method-name">goToInteractionsWindow</span>
-                  <em>
-(Register for the book store)                  </em>
+                  <a name="goToElementsWindow_FileUpload">
+                  </a> <!-- goToElementsWindow_FileUpload -->
+                  <span class="method-name">goToElementsWindow_FileUpload</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -153,6 +151,7 @@
   &lt;parameter name=&quot;Module&quot; value=&quot;Selenium Demo Test Result on &quot;/&gt;
   &lt;parameter name=&quot;title&quot; value=&quot;ToolsQA&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://demoqa.com/&quot;/&gt;
+  &lt;parameter name=&quot;platform&quot; value=&quot;UNIX&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Utilities.Listener&quot;/&gt;
   &lt;/listeners&gt;
@@ -160,7 +159,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;TestRunner.TestRunner&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;goToInteractionsWindow&quot;/&gt;
+          &lt;include name=&quot;goToElementsWindow_FileUpload&quot;/&gt;
           &lt;exclude name=&quot;validateCurrentURL&quot;/&gt;
           &lt;exclude name=&quot;registerForBookStoreApplication&quot;/&gt;
           &lt;exclude name=&quot;goToWdgetsScreen&quot;/&gt;
@@ -179,6 +178,9 @@
           &lt;exclude name=&quot;goToNewFrameWindow&quot;/&gt;
           &lt;exclude name=&quot;goToNewNestedFrameWindow&quot;/&gt;
           &lt;exclude name=&quot;goToModalDialogsWindow&quot;/&gt;
+          &lt;exclude name=&quot;goToInteractionsWindow&quot;/&gt;
+          &lt;exclude name=&quot;goToElementsWindow&quot;/&gt;
+          &lt;exclude name=&quot;goToElementsWindow_AccessLinks&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestRunner.TestRunner --&gt;
     &lt;/classes&gt;
@@ -222,9 +224,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'goToInteractionsWindow')
+data.setCell(0, 1, 'goToElementsWindow_FileUpload')
 data.setCell(0, 2, 'TestRunner.TestRunner')
-data.setCell(0, 3, 2685);
+data.setCell(0, 3, 2854);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
@@ -244,7 +246,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">17 ignored methods</span>
+            <span class="header-content">20 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -253,6 +255,8 @@ return data;
                 <span class="ignored-method-name">goToalert4</span>
                 <br/>
                 <span class="ignored-method-name">goToalert1</span>
+                <br/>
+                <span class="ignored-method-name">goToElementsWindow</span>
                 <br/>
                 <span class="ignored-method-name">goToNewWindow</span>
                 <br/>
@@ -276,6 +280,10 @@ return data;
                 <br/>
                 <span class="ignored-method-name">goToNewTab</span>
                 <br/>
+                <span class="ignored-method-name">goToInteractionsWindow</span>
+                <br/>
+                <span class="ignored-method-name">goToElementsWindow_AccessLinks</span>
+                <br/>
                 <span class="ignored-method-name">goToNewNestedFrameWindow</span>
                 <br/>
                 <span class="ignored-method-name">goToProgressBar</span>
@@ -295,37 +303,37 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">TestRunner.TestRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-suite before">
                 <span class="method-name">Intialize(chrome, https://demoqa.com/)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">validateTitle(https://demoqa.com/, chrome)</span>
-                <span class="method-start">13428 ms</span>
+                <span class="method-start">12471 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">validateCurrentURL(https://demoqa.com/, chrome)</span>
-                <span class="method-start">13438 ms</span>
+                <span class="method-start">12486 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">implicitwait</span>
-                <span class="method-start">13457 ms</span>
+                <span class="method-start">12507 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">threadSleep</span>
-                <span class="method-start">13463 ms</span>
+                <span class="method-start">12513 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">goToInteractionsWindow</span>
-                <span class="method-start">13465 ms</span>
+                <span class="method-name">goToElementsWindow_FileUpload</span>
+                <span class="method-start">12517 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">17731 ms</span>
+                <span class="method-start">15757 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">endSuite(${branch}, Selenium Demo Test Result on , dcs.selenium.report@gmail.com, lmsbruovggrocqxk, vikasitha...)</span>
-                <span class="method-start">18383 ms</span>
+                <span class="method-start">16970 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

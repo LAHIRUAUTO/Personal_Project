@@ -14,8 +14,8 @@
     <parameter name="tester" value="Got it"/>
     <parameter name="TestReportSenderMailAddress" value="dcs.selenium.report@gmail.com"/>
     <parameter name="TestReportSenderMailPassword" value="lmsbruovggrocqxk"/>
-    <parameter name="TestReportReceiverMailAddress" value="${reportReceiverMail}"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
-    <parameter name="browser" value="${browserName}"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
+    <parameter name="TestReportReceiverMailAddress" value="vikasithasouth@gmail.com"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
+    <parameter name="browser" value="chrome"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
     <parameter name="platform" value="UNIX"/>
 
 
@@ -45,7 +45,11 @@
                     <exclude name="goToNewNestedFrameWindow"/>
                     <exclude name="goToModalDialogsWindow"/>
                     <exclude name="goToInteractionsWindow"/>
-                    <include name="goToElementsWindow"/>
+                    <exclude name="goToElementsWindow"/>
+                    <exclude name="goToElementsWindow_AccessLinks"/>
+                    <include name="goToElementsWindow_FileUpload"/>
+
+
 
 
 
@@ -64,9 +68,19 @@
                 </methods>
 
             </class>
+            <!--<class name="TestRunner2.TestRunner2">
+                <methods>
+                    <exclude name="maintenance.*"/>
+                </methods>
+
+            </class>-->
 
         </classes>
 
+        <!--<packages>
+            <package name = "TestRunner2"/>
+        </packages>
+-->
 
     </test>
     <!--<test verbose="2" preserve-order="true" name="Sub_Suite_2">
