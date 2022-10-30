@@ -47,7 +47,11 @@
                     <exclude name="goToInteractionsWindow"/>
                     <exclude name="goToElementsWindow"/>
                     <exclude name="goToElementsWindow_AccessLinks"/>
-                    <include name="goToElementsWindow_FileUpload"/>
+                    <exclude name="goToElementsWindow_FileUpload"/>
+                    <exclude name="goToInteractionsWindow_Sortable"/>
+                    <exclude name="goToInteractionsWindow_Dragable"/>
+                    <exclude name="goToInteractionsWindow_DragAndDrop"/>
+                    <include name="javaScriptExecutor"/>
 
 
 

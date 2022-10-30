@@ -30,52 +30,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd69a041-a04c-48ca-befc-28a93054ddbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sikulixapi_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Execute2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Execute3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/TestNGDataProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner2/TestRunner2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner3/TestRunner3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Console_Output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Console_Output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Execute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Execute.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Extent_Reports/Test_Result.html" beforeDir="false" afterPath="$PROJECT_DIR$/Extent_Reports/Test_Result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screen_Capture_Result/goToElementsWindow.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screen_Capture_Result/goToElementsWindow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test Data/Personal_Project_test_data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Test Data/Personal_Project_test_data.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Elements/ElementsPageMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Elements/ElementsPageMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Elements/ElementsPageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Elements/ElementsPageObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Browser_Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Browser_Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ExtentReporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ExtentReporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Interactions/InteractionPageMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Interactions/InteractionPageMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Interactions/InteractionPageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools_QA_Page_Model/Interactions/InteractionPageObjects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Test-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Test-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Elements/ElementsPageMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Elements/ElementsPageMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Elements/ElementsPageObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools_QA_Page_Model/Elements/ElementsPageObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Browser_Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Browser_Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/ExtentReporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/ExtentReporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Test_Suite/Sub_Suite_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TestRunner.TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TestRunner.TestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Test_Suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,18 +77,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/user/Desktop/Udemy/Test&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.34252873&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/user/Desktop/Udemy/Test",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.34252873",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />

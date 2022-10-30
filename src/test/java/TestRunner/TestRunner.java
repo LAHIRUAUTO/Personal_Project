@@ -21,8 +21,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.awt.*;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.sql.Driver;
 
 public class TestRunner extends Utils {
 
@@ -362,6 +364,46 @@ public class TestRunner extends Utils {
         newelementspage.clickChooseFileLocator(textToBeInserted);
 
         //driver.get("https://demoqa.com/");
+    }
+
+    @Test
+    public void goToInteractionsWindow_Sortable () throws FindFailed {
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        InteractionPageMethods newinterctionpage = PageFactory.initElements(driver, InteractionPageMethods.class);
+        newhomepage.clickInteractionsLocator();
+        scrollDown();
+        newinterctionpage.clickSortableGridViewButtonLocator();
+    }
+
+    @Test
+    public void goToInteractionsWindow_Dragable () throws FindFailed, AWTException, InterruptedException {
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        InteractionPageMethods newinterctionpage = PageFactory.initElements(driver, InteractionPageMethods.class);
+        newhomepage.clickInteractionsLocator();
+        scrollDown();
+        newinterctionpage.clickDragableGridViewButtonLocator();
+        newinterctionpage.dragMeMethod();
+    }
+
+    @Test
+    public void goToInteractionsWindow_DragAndDrop () throws FindFailed, AWTException, InterruptedException {
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        InteractionPageMethods newinterctionpage = PageFactory.initElements(driver, InteractionPageMethods.class);
+        newhomepage.clickInteractionsLocator();
+        scrollDown();
+        newinterctionpage.clickDragAndDropGridViewButtonLocator();
+        newinterctionpage.dragAndDropMeMethod();
+    }
+
+    @Test
+    public void javaScriptExecutor () {
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("window.scrollBy(0,250)");
+    }
+
+    @Test
+    public void screenShotOfElements () {
+
     }
 
 

@@ -11,9 +11,17 @@ public class InteractionPageObjects extends Utils {
     @CacheLookup
     WebElement sortableButtonLocator;
 
-    @FindBy (xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/nav[1]/a[2]")
+    @FindBy (xpath = "//span[normalize-space()='Sortable']")
     @CacheLookup
     WebElement sortableGridViewButtonLocator;
+
+    @FindBy (xpath = "//span[normalize-space()='Dragabble']")
+    @CacheLookup
+    WebElement dragableGridViewButtonLocator;
+
+    @FindBy (xpath = "//span[normalize-space()='Droppable']")
+    @CacheLookup
+    WebElement dropableGridViewButtonLocator;
 
 
     @FindBy (xpath = "//div[text()='One']")
@@ -51,4 +59,18 @@ public class InteractionPageObjects extends Utils {
     @FindBy (xpath = "//div[text()='Nine']")
     @CacheLookup
     WebElement sortableGridBoxNine;
+
+    @FindBy (xpath = "//div[@id='dragBox']")
+    @CacheLookup
+    WebElement dragMeButtonLocator;
+
+    @FindBy (xpath = "//div[@id='draggable']")
+    @CacheLookup
+    WebElement draggerButtonLocator;
+
+    @FindBy (xpath = "//div[@id='simpleDropContainer']//div[@id='droppable']")
+    @CacheLookup
+    WebElement dropperButtonLocator;
+
+
 }
