@@ -163,6 +163,20 @@ public class Utils extends Browser_Base{
     }
     /*Get Screen shot end*/
 
+    public Object getHttpResponseCode() {
+        final String GET_RESPONSE_CODE_SCRIPT =
+                "var xhr = new XMLHttpRequest();" +
+                        "xhr.open('GET', arguments[0], false);" +
+                        "xhr.send(null);" +
+                        "return xhr.status";
+        JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+        Object statusCode = javascriptExecutor.executeScript(GET_RESPONSE_CODE_SCRIPT, driver.getCurrentUrl());
+        String httpCode = String.valueOf(statusCode);
+        //System.out.println(statusCode);
+        return httpCode;
+
+    }
+
 
 
 

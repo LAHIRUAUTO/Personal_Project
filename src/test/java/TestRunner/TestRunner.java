@@ -16,7 +16,6 @@ import jxl.read.biff.BiffException;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.sikuli.script.FindFailed;
-import org.testng.SkipException;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -24,7 +23,6 @@ import org.testng.annotations.Test;
 import java.awt.*;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.sql.Driver;
 
 public class TestRunner extends Utils {
 
@@ -399,6 +397,28 @@ public class TestRunner extends Utils {
     public void javaScriptExecutor () {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("window.scrollBy(0,250)");
+    }
+
+    @Test
+    public void findIFrames () {
+
+        WebElement brockenImage = driver.findElement(By.xpath("//img[2]"));
+        brockenImage.click();
+
+    }
+
+    @Test
+    public void httpResponseCheck () {
+        HomePageMethods newhomepage = PageFactory.initElements(driver, HomePageMethods.class);
+        ElementsPageMethods newelementspage = PageFactory.initElements(driver, ElementsPageMethods.class);
+        newhomepage.clickElementsLocator();
+        scrollDown();
+        newelementspage.clickBrokenLinksLocator();
+        newelementspage.clickBrokenLink();
+        System.out.println(getHttpResponseCode());
+
+
+
     }
 
     @Test

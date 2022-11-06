@@ -1,18 +1,22 @@
-2022 10 29 19:00/: Test suite started 
+2022 11 06 20:55/: Test suite started 
 log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 46010
+Starting Microsoft Edge WebDriver 105.0.1343.53 (3a47f00402d579c8ba1fad7e143f9d73831b6765) on port 59856
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Oct 29, 2022 7:00:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+Nov 06, 2022 8:55:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Oct 29, 2022 7:00:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 06, 2022 8:55:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 105
 Run Before Test
-Correct URL hit on chrome
-2022 10 29 19:01/
+Correct URL hit on edge
+200
+2022 11 06 20:55/
 
 ===============================================
 Test_Suite

@@ -1,5 +1,6 @@
 package Tools_QA_Page_Model.Elements;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.sikuli.script.FindFailed;
@@ -12,6 +13,7 @@ public class ElementsPageMethods extends ElementsPageObjects{
     public void clickdynamicPropertiesLocator (){
         explicitWaitElementClickable(dynamicPropertiesLocator);
         dynamicPropertiesLocator.click();
+        driver.findElement(By.className("mt-50")).sendKeys("asasd");
     }
 
     public void clickFiveSecondsButton () {
@@ -33,6 +35,16 @@ public class ElementsPageMethods extends ElementsPageObjects{
     public void clickLinksLocator (){
         explicitWaitElementClickable(linksLocator);
          linksLocator.click();
+    }
+
+    public void clickBrokenLinksLocator (){
+        explicitWaitElementClickable(brokenLinksLocator);
+        brokenLinksLocator.click();
+    }
+
+    public void clickBrokenLink (){
+        explicitWaitElementClickable(brokenLink);
+        brokenLink.click();
     }
 
     public void getAllLinks (){

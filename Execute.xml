@@ -15,7 +15,7 @@
     <parameter name="TestReportSenderMailAddress" value="dcs.selenium.report@gmail.com"/>
     <parameter name="TestReportSenderMailPassword" value="lmsbruovggrocqxk"/>
     <parameter name="TestReportReceiverMailAddress" value="vikasithasouth@gmail.com"/><!--vikasithasouth@gmail.com / ${reportReceiverMail}-->
-    <parameter name="browser" value="chrome"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
+    <parameter name="browser" value="edge"/><!--chrome / firefox / edge / chromeheadless / CDTchrome /  ${browserName}-->
     <parameter name="platform" value="UNIX"/>
 
 
@@ -51,25 +51,11 @@
                     <exclude name="goToInteractionsWindow_Sortable"/>
                     <exclude name="goToInteractionsWindow_Dragable"/>
                     <exclude name="goToInteractionsWindow_DragAndDrop"/>
-                    <include name="javaScriptExecutor"/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <exclude name="javaScriptExecutor"/>
+                    <exclude name="findIFrames"/>
+                    <include name="httpResponseCheck"/>
                 </methods>
+
 
             </class>
             <!--<class name="TestRunner2.TestRunner2">

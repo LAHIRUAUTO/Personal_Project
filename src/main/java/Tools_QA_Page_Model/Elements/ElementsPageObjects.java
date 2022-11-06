@@ -25,6 +25,14 @@ public class ElementsPageObjects extends Utils {
     @CacheLookup
     WebElement linksLocator;
 
+    @FindBy (xpath = "//span[normalize-space()='Broken Links - Images']")
+    @CacheLookup
+    WebElement brokenLinksLocator;
+
+    @FindBy (xpath = "//a[normalize-space()='Click Here for Broken Link']")
+    @CacheLookup
+    WebElement brokenLink;
+
     @FindBy (tagName = "a")
     @CacheLookup
     List<WebElement> tagName;
